@@ -6,6 +6,7 @@ import MenuTeaser from "./components/MenuTeaser";
 import { Row, Col, Container } from "reactstrap";
 import CharTeaser from "./components/CharTeaser";
 import AboutInfo from "./components/About";
+import ImageOverlay from "./components/ImageOverlay";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
         <Row>
           <Navigation />
         </Row>
-        <Row></Row>
+        <Row>
+          <ImageOverlay />
+        </Row>
         <Row>
           <AboutInfo />
         </Row>
