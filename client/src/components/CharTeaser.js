@@ -8,12 +8,12 @@ import {
   CardImg,
 } from "reactstrap";
 
-const AboutInfo = () => {
+const CharTeaser = () => {
   return (
     <div>
       <Card>
         <CardBody>
-          <CardTitle>About Info</CardTitle>
+          <CardTitle>Character Teaser</CardTitle>
           <CardText>
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This content is a little bit longer.
@@ -33,4 +33,4 @@ const AboutInfo = () => {
   );
 };
 
-export default AboutInfo;
+export default CharTeaser;
