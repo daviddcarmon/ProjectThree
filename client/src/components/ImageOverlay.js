@@ -1,19 +1,24 @@
 import React from "react";
 import {
   Card,
-  CardBody,
-  Button,
   CardTitle,
   CardText,
   CardImg,
+  CardImgOverlay,
+  Button,
 } from "reactstrap";
 
-const AboutInfo = () => {
+const ImageOverlay = () => {
   return (
     <div>
-      <Card>
-        <CardBody>
-          <CardTitle>About Info</CardTitle>
+      <Card inverse>
+        <CardImg
+          width="100%"
+          src="https://www.abc.net.au/cm/rimage/11897182-16x9-large.jpg?v=5"
+          alt="Card image cap"
+        />
+        <CardImgOverlay>
+          <CardTitle>Lord of the Rings App</CardTitle>
           <CardText>
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This content is a little bit longer.
@@ -21,16 +26,11 @@ const AboutInfo = () => {
           <CardText>
             <small className="text-muted">Last updated 3 mins ago</small>
           </CardText>
-        </CardBody>
-        <CardImg
-          bottom
-          width="100%"
-          src="/assets/318x180.svg"
-          alt="Card image cap"
-        />
+          <Button>Book Now!</Button>
+        </CardImgOverlay>
       </Card>
     </div>
   );
 };
 
-export default AboutInfo;
+export default ImageOverlay;

@@ -5,11 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "axios": "^0.19.2",
-    "express": "^4.17.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "reactstrap": "^8.5.1",
-    "reactstrap-date-picker": "0.0.9"
+    "express": "^4.17.1"
   },
   "devDependencies": {},
   "scripts": {
