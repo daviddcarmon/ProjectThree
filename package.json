@@ -1,0 +1,30 @@
+{
+  "name": "ProjectThree",
+  "version": "1.0.0",
+  "description": "Full Stack MERN",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "reactstrap": "^8.5.1",
+    "reactstrap-date-picker": "0.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "cd client && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daviddcarmon/ProjectThree.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daviddcarmon/ProjectThree/issues"
+  },
+  "homepage": "https://github.com/daviddcarmon/ProjectThree#readme"
+}
