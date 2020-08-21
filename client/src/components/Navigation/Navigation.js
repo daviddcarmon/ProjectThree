@@ -1,4 +1,5 @@
 import React from "react";
+import "./Navigation.css"
 import {
   Collapse,
   Navbar,
@@ -20,7 +21,7 @@ const Navigation = () => {
   //   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div id="change">
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">reactstrap</NavbarBrand>
         <NavbarToggler />
