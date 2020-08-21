@@ -21,7 +21,7 @@ const Navigation = () => {
   //   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div id="change">
+    <div>
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">reactstrap</NavbarBrand>
         <NavbarToggler />

@@ -19,7 +19,7 @@ function App() {
           <Col><ImageOverlay /></Col>
         </Row>
         <Row>
-          <Col md="8">
+          <Col md="8" className="bg-primary">
           https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80
           </Col>
           <Col md="4">
@@ -32,12 +32,12 @@ function App() {
                 <MenuTeaser />
           
           </Col>
-          <Col md="8">
+          <Col md="8" className="bg-dark">
                https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Fshots%2F5795476-Creative-Black-Food-Menu-Flyer&psig=AOvVaw1furNOm8oALE6lzCGWvnOg&ust=1598118022362000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIj-ltrrrOsCFQAAAAAdAAAAABAJ
           </Col>
         </Row>
         <Row>
-          <Col md="8">
+          <Col md="8" className="bg-warning">
             lorefamsodsamoasd
           </Col>
           <Col md="4">

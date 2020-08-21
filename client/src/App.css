@@ -1,4 +1,17 @@
 .totalPage {
   max-width: 100% !important;
-  background: green;
+  /* background: green; */
+  background-image: url("https://gortoncenter.org/wp-content/uploads/2018/03/LordOfTheRings.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  max-height: 100% !important;
+  background-size: 4000px;
+  background-attachment: fixed;
+  
 }
+
+
+
+/* body {
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fgortoncenter.org%2Fevent%2Flotr1%2F&psig=AOvVaw2f_FQMbC8xPf0kcS2VBUtK&ust=1598121572146000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMie0vb4rOsCFQAAAAAdAAAAABAD") !important;
+} */
