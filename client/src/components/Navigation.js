@@ -40,7 +40,7 @@ const Navigation = () => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="./pages/Booking">Book Now!</NavLink>
+              <NavLink href="/components/pages/Booking">Book Now!</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
