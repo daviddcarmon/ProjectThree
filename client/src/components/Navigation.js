@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Collapse,
   Navbar,
@@ -13,7 +14,6 @@ const Navigation = () => {
   //   const [isOpen, setIsOpen] = useState(false);
 
   //   const toggle = () => setIsOpen(!isOpen);
-
   return (
     <div>
       <Navbar color="light" light expand="md">

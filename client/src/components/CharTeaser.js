@@ -10,7 +10,7 @@ import {
 
 const CharTeaser = () => {
   return (
-    <div>
+    <div id="charDest">
       <Card>
         <CardBody>
           <CardTitle>Character Teaser</CardTitle>
