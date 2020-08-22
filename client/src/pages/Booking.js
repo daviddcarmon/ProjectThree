@@ -1,4 +1,6 @@
 import React from "react";
+// will need to import confirmation page component for submit button
+// import Confirmation from "./Confirmation";
 import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
 
 function Booking() {
@@ -69,6 +71,7 @@ function Booking() {
           <option>5</option>
         </Input>
       </FormGroup>
+      {/* will have to have button connect to confirmation page */}
       <Button>Book Party!</Button>
     </Form>
   );
