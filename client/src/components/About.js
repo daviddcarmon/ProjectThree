@@ -10,7 +10,7 @@ import {
 
 const AboutInfo = () => {
   return (
-    <div>
+    <div id="aboutDest">
       <Card>
         <CardBody>
           <CardTitle>About Info</CardTitle>
