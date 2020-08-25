@@ -10,9 +10,8 @@ import {
 
 const CharTeaser = () => {
   return (
-    <div id="charInfo, charDest">
-
-      <Card>
+    <div id="charInfo">
+      <Card id="charDest">
         <CardBody>
           <CardTitle>Character Teaser</CardTitle>
           <CardText>*** character content here ***</CardText>

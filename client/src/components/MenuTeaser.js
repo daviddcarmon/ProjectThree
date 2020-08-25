@@ -11,9 +11,8 @@ import {
 
 const MenuTeaser = () => {
   return (
-    <div id="menuInfo, menuDest">
-
-      <Card>
+    <div id="menuInfo">
+      <Card id="menuDest">
         <CardBody>
           <CardTitle>Menu Teaser</CardTitle>
           <CardText>*** menu content here ***</CardText>
