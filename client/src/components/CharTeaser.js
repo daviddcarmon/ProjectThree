@@ -10,13 +10,13 @@ import {
 
 const CharTeaser = () => {
   return (
-    <div>
+    <div id="charInfo">
       <Card>
         <CardBody>
           <CardTitle>Character Teaser</CardTitle>
           <CardText>*** character content here ***</CardText>
 
-          <Button>See more</Button>
+          <Button href="/charList">See full list of characters</Button>
         </CardBody>
         <CardImg
           bottom

@@ -1,7 +1,7 @@
 import React from "react";
 // will need to import confirmation page component for submit button
 // import Confirmation from "./Confirmation";
-import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 function Booking() {
   return (
