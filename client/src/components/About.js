@@ -10,7 +10,8 @@ import {
 
 const AboutInfo = () => {
   return (
-    <div id="aboutDest">
+    <div id="about, aboutDest">
+
       <Card>
         <CardBody>
           <CardTitle>About Info</CardTitle>
@@ -18,7 +19,6 @@ const AboutInfo = () => {
           <CardText>
             <small className="text-muted">Last updated 3 mins ago</small>
           </CardText>
-          <Button>See more</Button>
         </CardBody>
         <CardImg
           bottom

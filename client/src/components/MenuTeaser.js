@@ -11,13 +11,14 @@ import {
 
 const MenuTeaser = () => {
   return (
-    <div id="menuDest">
+    <div id="menuInfo, menuDest">
+
       <Card>
         <CardBody>
           <CardTitle>Menu Teaser</CardTitle>
           <CardText>*** menu content here ***</CardText>
 
-          <Button>See more</Button>
+          <Button href="/menuList">See all party packages</Button>
         </CardBody>
         {/* <MenuCarousel /> */}
 

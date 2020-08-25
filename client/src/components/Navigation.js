@@ -7,8 +7,8 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
 } from "reactstrap";
+import { NavHashLink as NavLink } from "react-router-hash-link";
 
 const Navigation = () => {
   //   const [isOpen, setIsOpen] = useState(false);
@@ -22,26 +22,28 @@ const Navigation = () => {
         <Collapse navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">About</NavLink>
+              <NavLink to="/#about" activeClassName="selected">
+                About
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink to="/#menuInfo" activeClassName="selected">
                 Menu
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink to="/#charInfo" activeClassName="selected">
                 Characters
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink to="/#availability" activeClassName="selected">
                 Availability
               </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/components/pages/Booking">Book Now!</NavLink>
-            </NavItem>
+            <NavLink to="/booking" activeClassName="selected">
+              Book Now!
+            </NavLink>
           </Nav>
         </Collapse>
       </Navbar>

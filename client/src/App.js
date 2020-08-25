@@ -1,40 +1,54 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
+import Booking from "./pages/Booking";
 import Navigation from "./components/Navigation";
-import MenuTeaser from "./components/MenuTeaser";
-import { Row, Col, Container } from "reactstrap";
 import CharTeaser from "./components/CharTeaser";
-import AboutInfo from "./components/About";
-import ImageOverlay from "./components/ImageOverlay";
+
+import Confirmation from "./pages/Confirmation";
+import Homepage from "./pages/Homepage";
+import Footer from "./components/Footer";
+import MenuTeaser from "./components/MenuTeaser";
+import MenuList from "./pages/MenuList";
+import CharacterList from "./pages/CharacterList";
+
 // import Calendar from "./components/Calendar";
 
 function App() {
   return (
-    <div className="App">
-      <Container>
-        <Col>
-          <Row>
-            <Navigation />
-          </Row>
-          <Row>
-            <ImageOverlay />
-          </Row>
-          <Row>
-            <AboutInfo />
-          </Row>
-          <Row>
+    <Router>
+      <div>
+        <Navigation />
+        <Switch>
+          <Route exact path={["/"]}>
+            <Homepage />
+          </Route>
+          <Route exact path="/booking">
+            <Booking />
+          </Route>
+          <Route exact path="/confirm">
+            <Confirmation />
+          </Route>
+          <Route exact path="/menuInfo">
             <MenuTeaser />
-          </Row>
-          <Row>
+          </Route>
+          <Route exact path="/menuList">
+            <MenuList />
+          </Route>
+          <Route exact path="/charInfo">
             <CharTeaser />
-          </Row>
-          {/* <Row>
-          <Calendar />
-        </Row> */}
-        </Col>
-      </Container>
-    </div>
+          </Route>
+          <Route exact path="/charList">
+            <CharacterList />
+          </Route>
+          <Route>
+            <Homepage />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

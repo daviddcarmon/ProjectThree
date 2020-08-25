@@ -1,17 +1,22 @@
 import React from "react";
-import "../App.css";
-import MenuTeaser from "../components/MenuTeaser";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
+import Navigation from "./components/Navigation";
+import MenuTeaser from "./components/MenuTeaser";
 import { Row, Col, Container } from "reactstrap";
-import CharTeaser from "../components/CharTeaser";
-import AboutInfo from "../components/About";
-import ImageOverlay from "../components/ImageOverlay";
+import CharTeaser from "./components/CharTeaser";
+import AboutInfo from "./components/About";
+import ImageOverlay from "./components/ImageOverlay";
 // import Calendar from "./components/Calendar";
 
-function Homepage() {
+function App() {
   return (
     <div className="App">
       <Container>
         <Col>
+          <Row>
+            <Navigation />
+          </Row>
           <Row>
             <ImageOverlay />
           </Row>
@@ -33,4 +38,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default App;

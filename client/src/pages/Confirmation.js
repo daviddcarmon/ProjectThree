@@ -23,7 +23,7 @@ const Confirmation = (props) => {
           <CardTitle>Confirmation Page</CardTitle>
           <CardSubtitle>Thanks for booking your party!</CardSubtitle>
           <CardText>Party confirmation information.</CardText>
-          <Button>Back to home screen</Button>
+          <Button href="/">Back to home screen</Button>
         </CardBody>
       </Card>
     </div>

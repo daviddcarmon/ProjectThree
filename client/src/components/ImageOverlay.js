@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Card,
   CardTitle,
@@ -26,7 +27,7 @@ const ImageOverlay = () => {
           <CardText>
             <small className="text-muted">Last updated 3 mins ago</small>
           </CardText>
-          <Button>Book Now!</Button>
+          <Button href="/booking">Book Now!</Button>
         </CardImgOverlay>
       </Card>
     </div>
