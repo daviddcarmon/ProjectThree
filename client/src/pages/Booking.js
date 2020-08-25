@@ -72,7 +72,7 @@ function Booking() {
         </Input>
       </FormGroup>
       {/* will have to have button connect to confirmation page */}
-      <Button>Book Party!</Button>
+      <Button href="/confirm">Book Party!</Button>
     </Form>
   );
 }
