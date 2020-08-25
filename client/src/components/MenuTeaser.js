@@ -1,4 +1,5 @@
 import React from "react";
+// import MenuCarousel from "./MenuCarousel";
 import {
   Card,
   CardBody,
@@ -10,7 +11,8 @@ import {
 
 const MenuTeaser = () => {
   return (
-    <div id="menuInfo">
+    <div id="menuInfo, menuDest">
+
       <Card>
         <CardBody>
           <CardTitle>Menu Teaser</CardTitle>
@@ -18,6 +20,8 @@ const MenuTeaser = () => {
 
           <Button href="/menuList">See all party packages</Button>
         </CardBody>
+        {/* <MenuCarousel /> */}
+
         <CardImg
           bottom
           width="100%"

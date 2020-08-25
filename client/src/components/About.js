@@ -10,7 +10,8 @@ import {
 
 const AboutInfo = () => {
   return (
-    <div id="about">
+    <div id="about, aboutDest">
+
       <Card>
         <CardBody>
           <CardTitle>About Info</CardTitle>
