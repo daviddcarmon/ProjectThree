@@ -1,45 +1,53 @@
 import React from "react";
-import { connect } from "react-redux";
-import daysInCurrentMonth from "./DateHelper";
-import uuid from "uuid";
+// import { connect } from "react-redux";
+import { daysInCurrentMonth, firstDayOfMonth } from "./DateHelper";
+import { v4 as uuidv4 } from "uuid";
+
+const css = {
+  border: "solid 1px tomato",
+};
 
 function Calendar(props) {
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  const numberOfWeeks = [0, 1, 2, 3, 4];
+  const numberOfWeeks = [0, 1, 2, 3, 4, 5];
 
   return (
-    <table>
-      <section className="dayOfWeek">
-        <div>
+    <table style={css}>
+      <thead className="dayOfWeek" style={css}>
+        <tr style={css}>
           {daysOfWeek.map((day) => (
-            <div key={uuid()}>{day}</div>
+            <th style={css} key={uuidv4()}>
+              {day}
+            </th>
           ))}
-        </div>
-      </section>
-      <section className="weeks">
+        </tr>
+      </thead>
+      <tbody className="weeks" style={css}>
         {numberOfWeeks.map((week, weekIdx) => (
-          <div key={uuid()}>
+          <tr key={uuidv4()} style={css}>
             {daysOfWeek.map((day, dayIdx) => {
-              let dayOfMonth = dayIdx + 1 + weekIdx * 7;
+              let dayOfMonth = dayIdx + 1 + weekIdx * 7 - firstDayOfMonth;
               let eventsToday = props.events.filter((event) => {
                 return Number(event.date.slice(-2)) === dayOfMonth;
               });
               return (
-                <div key={uuid()}>
-                  {dayOfMonth > daysInCurrentMonth ? null : dayOfMonth}
+                <td key={uuidv4()} style={css}>
+                  {dayOfMonth > daysInCurrentMonth || dayOfMonth < 1
+                    ? null
+                    : dayOfMonth}
                   {!eventsToday[0] ? null : (
                     <ul>
                       {eventsToday.map((event) => (
-                        <EventItem key={uuid()}>{event.name}</EventItem>
+                        <li key={uuidv4()}>{event.name}</li>
                       ))}
                     </ul>
                   )}
-                </div>
+                </td>
               );
             })}
-          </div>
+          </tr>
         ))}
-      </section>
+      </tbody>
     </table>
   );
 }
@@ -50,4 +58,5 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(Calendar);
+//export default connect(mapStateToProps)(Calendar);
+export default Calendar;

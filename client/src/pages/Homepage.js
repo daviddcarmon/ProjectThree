@@ -5,7 +5,7 @@ import { Row, Col, Container } from "reactstrap";
 import CharTeaser from "../components/CharTeaser";
 import AboutInfo from "../components/About";
 import ImageOverlay from "../components/ImageOverlay";
-// import Calendar from "./components/Calendar";
+import Calendar from "../components/Calendar";
 
 function Homepage() {
   return (
@@ -24,9 +24,9 @@ function Homepage() {
           <Row>
             <CharTeaser />
           </Row>
-          {/* <Row>
-          <Calendar />
-        </Row> */}
+          <Row>
+          <Calendar events={[]} />
+        </Row>
         </Col>
       </Container>
     </div>
