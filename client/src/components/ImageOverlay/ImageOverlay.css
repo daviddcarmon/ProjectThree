@@ -1,0 +1,21 @@
+
+
+@font-face{
+    font-family: "curly";
+    src:url("./AlexBrush-Regular.ttf");
+  }
+  
+  #change {
+    background-color: yellow;
+    font-family: "curly", "Times New Roman" !important;
+  }
+
+  .imgOverlayClearTop {
+    opacity: 0;
+    height:500px;
+  }
+
+  .imgOverlayClearBottom {
+    opacity: 0;
+    height:100px;
+  }

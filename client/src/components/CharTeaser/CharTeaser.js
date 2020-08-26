@@ -1,4 +1,5 @@
 import React from "react";
+import "./CharTeaser.css"
 import {
   Card,
   CardBody,
