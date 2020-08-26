@@ -11,7 +11,7 @@ import {
   CardBody,
 } from "reactstrap";
 
-const MenuList = (props) => {
+const MenuList = () => {
   return (
     <CardDeck>
       <Card>

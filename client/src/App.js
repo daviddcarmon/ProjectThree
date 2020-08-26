@@ -21,27 +21,22 @@ function App() {
       <div>
         <Navigation />
         <Switch>
-          <Route exact path={["/"]}>
-            <Homepage />
-          </Route>
+          <Route exact path={["/"]} component={Homepage} />
+
           <Route exact path="/booking">
             <Booking />
           </Route>
           <Route exact path="/confirm">
             <Confirmation />
           </Route>
-          <Route exact path="/menuInfo">
-            <MenuTeaser />
-          </Route>
-          <Route exact path="/menuList">
-            <MenuList />
-          </Route>
-          <Route exact path="/charInfo">
-            <CharTeaser />
-          </Route>
-          <Route exact path="/charList">
-            <CharacterList />
-          </Route>
+          <Route exact path="/menuInfo" component={MenuTeaser} />
+
+          <Route exact path="/menuList" component={MenuList} />
+
+          <Route exact path="/charInfo" component={CharTeaser} />
+
+          <Route exact path="/charList" component={CharacterList} />
+
           <Route>
             <Homepage />
           </Route>

@@ -11,7 +11,7 @@ import {
   CardBody,
 } from "reactstrap";
 
-const CharacterList = (props) => {
+const CharacterList = () => {
   return (
     <CardDeck>
       <Card>
