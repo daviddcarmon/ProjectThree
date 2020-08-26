@@ -11,23 +11,39 @@ function Homepage() {
   return (
     <div className="App">
       <Container>
-        <Col>
+
           <Row>
-            <ImageOverlay />
-          </Row>
+              <ImageOverlay />
+           </Row>
+
+           <Row>
+              <Col md="8">
+                <AboutInfo />
+              </Col>
+              <Col md="4" id="image-block">
+                IMAGE
+              </Col>
+            </Row>
+            <Row>
+              <Col md="4" id="image-block">
+                IMAGE
+              </Col>
+              <Col md="8">
+                <MenuTeaser />
+              </Col>
+            </Row>
           <Row>
-            <AboutInfo />
-          </Row>
-          <Row>
-            <MenuTeaser />
-          </Row>
-          <Row>
+            <Col md="8">
             <CharTeaser />
+            </Col>
+            <Col md="4" id="image-block">
+                IMAGE
+            </Col>
           </Row>
           <Row>
             <Calendar events={[]} />
           </Row>
-        </Col>
+
       </Container>
     </div>
   );
