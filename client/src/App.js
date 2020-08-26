@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import Booking from "./pages/Booking";
-import Navigation from "./components/Navigation";
-import CharTeaser from "./components/CharTeaser";
+import Navigation from "./components/Navigation/Navigation";
+import CharTeaser from "./components/CharTeaser/CharTeaser";
 
 import Confirmation from "./pages/Confirmation";
 import Homepage from "./pages/Homepage";
-import Footer from "./components/Footer";
-import MenuTeaser from "./components/MenuTeaser";
+import Footer from "./components/Footer/Footer";
+import MenuTeaser from "./components/MenuTeaser/MenuTeaser";
 import MenuList from "./pages/MenuList";
 import CharacterList from "./pages/CharacterList";
 

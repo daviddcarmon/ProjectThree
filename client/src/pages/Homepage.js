@@ -1,11 +1,11 @@
 import React from "react";
 import "../App.css";
-import MenuTeaser from "../components/MenuTeaser";
+import MenuTeaser from "../components/MenuTeaser/MenuTeaser";
 import { Row, Col, Container } from "reactstrap";
-import CharTeaser from "../components/CharTeaser";
-import AboutInfo from "../components/About";
-import ImageOverlay from "../components/ImageOverlay";
-import Calendar from "../components/Calendar";
+import CharTeaser from "../components/CharTeaser/CharTeaser";
+import AboutInfo from "../components/About/About";
+import ImageOverlay from "../components/ImageOverlay/ImageOverlay";
+import Calendar from "../components/Calendar/Calendar";
 
 function Homepage() {
   return (
@@ -25,8 +25,8 @@ function Homepage() {
             <CharTeaser />
           </Row>
           <Row>
-          <Calendar events={[]} />
-        </Row>
+            <Calendar events={[]} />
+          </Row>
         </Col>
       </Container>
     </div>

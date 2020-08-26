@@ -1,6 +1,6 @@
 import React from "react";
 // import { connect } from "react-redux";
-import { daysInCurrentMonth, firstDayOfMonth } from "./DateHelper";
+import { daysInCurrentMonth, firstDayOfMonth } from "../DateHelper/DateHelper";
 import { v4 as uuidv4 } from "uuid";
 
 const css = {
