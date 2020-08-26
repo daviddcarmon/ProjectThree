@@ -3,11 +3,14 @@ const currentYear = currentDate.getFullYear();
 const currentMonth = currentDate.getMonth();
 
 const getDaysInMonth = (month, year) => {
- 
- return new Date(year, month, 0).getDate();
-
+  return new Date(year, month, 0).getDate();
 };
 
-const daysInCurrentMonth = getDaysInMonth(currentMonth,currentYear);
+const getFirstDayOfMonth = (month, year) => {
+  return new Date(year, month, 1).getDay();
+};
 
-export default daysInCurrentMonth;
+const daysInCurrentMonth = getDaysInMonth(currentMonth, currentYear);
+const firstDayOfMonth = getFirstDayOfMonth(currentMonth, currentYear);
+
+export { daysInCurrentMonth, firstDayOfMonth };

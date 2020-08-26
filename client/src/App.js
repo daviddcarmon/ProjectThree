@@ -26,6 +26,7 @@ function App() {
           <Route exact path="/booking">
             <Booking />
           </Route>
+
           <Route exact path="/confirm">
             <Confirmation />
           </Route>
