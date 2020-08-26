@@ -11,14 +11,11 @@ import {
 
 const AboutInfo = () => {
   return (
-    <div>
-      <Card>
+    <div id="about">
+      <Card id="aboutDest">
         <CardBody>
           <CardTitle>About Info</CardTitle>
-          <CardText>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </CardText>
+          <CardText>*** about content here ***</CardText>
           <CardText>
             <small className="text-muted">Last updated 3 mins ago</small>
           </CardText>
@@ -26,8 +23,8 @@ const AboutInfo = () => {
         <CardImg
           bottom
           width="100%"
-          src="/assets/318x180.svg"
-          alt="Card image cap"
+          src="https://images.unsplash.com/photo-1506466010722-395aa2bef877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          alt="About image"
         />
       </Card>
     </div>

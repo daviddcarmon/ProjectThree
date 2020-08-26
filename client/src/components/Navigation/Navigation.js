@@ -1,5 +1,4 @@
 import React from "react";
-import "./Navigation.css"
 import {
   Collapse,
   Navbar,
@@ -7,47 +6,44 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
 } from "reactstrap";
+import { NavHashLink as NavLink } from "react-router-hash-link";
 
 const Navigation = () => {
   //   const [isOpen, setIsOpen] = useState(false);
 
   //   const toggle = () => setIsOpen(!isOpen);
-
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <NavbarBrand href="/">Elevenses</NavbarBrand>
         <NavbarToggler />
         <Collapse navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
+              <NavLink to="/#about" activeClassName="selected">
+                About
               </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+              <NavLink to="/#menuInfo" activeClassName="selected">
+                Menu
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/#charInfo" activeClassName="selected">
+                Characters
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/#availability" activeClassName="selected">
+                Availability
+              </NavLink>
+            </NavItem>
+            <NavLink to="/booking" activeClassName="selected">
+              Book Now!
+            </NavLink>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>

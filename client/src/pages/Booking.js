@@ -1,20 +1,32 @@
 import React from "react";
+// will need to import confirmation page component for submit button
+// import Confirmation from "./Confirmation";
+import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 function Booking() {
   return (
-    <section className="bookingForm">
-      <div className="form-group">
-        <label for="exampleFormControlInput1">Email address</label>
-        <input
-          type="email"
-          className="form-control"
-          id="exampleFormControlInput1"
-          placeholder="name@example.com"
+    <Form>
+      <FormGroup>
+        <Label for="exampleEmail">Name</Label>
+        <Input
+          type="name"
+          name="name"
+          id="exampleName"
+          placeholder="First & Last name"
         />
-      </div>
-      <div className="form-group">
-        <label for="exampleFormControlSelect1">Number of guests</label>
-        <select className="form-control" id="exampleFormControlSelect1">
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleEmail">Email</Label>
+        <Input
+          type="email"
+          name="email"
+          id="exampleEmail"
+          placeholder="with a placeholder"
+        />
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleSelect">Number of guests:</Label>
+        <Input type="select" name="select" id="numberOfGuests">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -25,32 +37,43 @@ function Booking() {
           <option>8</option>
           <option>9</option>
           <option>10</option>
-        </select>
-      </div>
-      <div className="form-group">
-        <label for="exampleFormControlSelect2">Party Package</label>
-        <select
-          multiple
-          className="form-control"
-          id="exampleFormControlSelect2"
-        >
+        </Input>
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleSelect">Party Food Package:</Label>
+        <Input type="select" name="select" id="partyPackage">
           <option>1</option>
           <option>2</option>
           <option>3</option>
-        </select>
-      </div>
-      <div className="form-group">
-        <label for="exampleFormControlTextarea1">
-          Please let us know of any allergies, food sensitivity, or more then 10
-          guests.
-        </label>
-        <textarea
-          className="form-control"
-          id="exampleFormControlTextarea1"
-          rows="3"
-        ></textarea>
-      </div>
-    </section>
+          <option>4</option>
+          <option>5</option>
+        </Input>
+      </FormGroup>
+      <FormGroup>
+        <Label for="extraInfo">
+          {" "}
+          Please let us know of any allergies, food sensitivity, or if your
+          party will be more than 10 guests.
+        </Label>
+        <Input type="textarea" name="text" id="extraInfo" />
+      </FormGroup>
+
+      <FormGroup>
+        <Label for="exampleSelect">
+          If you would like to have a character come to your party, please
+          select which character:
+        </Label>
+        <Input type="select" name="select" id="exampleSelect">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </Input>
+      </FormGroup>
+      {/* will have to have button connect to confirmation page */}
+      <Button href="/confirm">Book Party!</Button>
+    </Form>
   );
 }
 

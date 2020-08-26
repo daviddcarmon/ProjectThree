@@ -11,23 +11,19 @@ import {
 
 const CharTeaser = () => {
   return (
-    <div>
-      <Card>
+    <div id="charInfo">
+      <Card id="charDest">
         <CardBody>
           <CardTitle>Character Teaser</CardTitle>
-          <CardText>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </CardText>
-          <CardText>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </CardText>
+          <CardText>*** character content here ***</CardText>
+
+          <Button href="/charList">See full list of characters</Button>
         </CardBody>
         <CardImg
           bottom
           width="100%"
-          src="/assets/318x180.svg"
-          alt="Card image cap"
+          src="https://images.unsplash.com/photo-1532117892888-38948e152b3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          alt="About image"
         />
       </Card>
     </div>

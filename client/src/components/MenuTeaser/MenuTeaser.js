@@ -1,6 +1,5 @@
 import React from "react";
-import "./MenuTeaser.css"
-
+// import MenuCarousel from "./MenuCarousel";
 import {
   Card,
   CardBody,
@@ -12,24 +11,22 @@ import {
 
 const MenuTeaser = () => {
   return (
-    <div>
-      <Card>
-        <CardImg
-          top
-          width="100%"
-          src="/assets/318x180.svg"
-          alt="Card image cap"
-        />
+    <div id="menuInfo">
+      <Card id="menuDest">
         <CardBody>
           <CardTitle>Menu Teaser</CardTitle>
-          <CardText>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </CardText>
-          <CardText>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </CardText>
+          <CardText>*** menu content here ***</CardText>
+
+          <Button href="/menuList">See all party packages</Button>
         </CardBody>
+        {/* <MenuCarousel /> */}
+
+        <CardImg
+          bottom
+          width="100%"
+          src="https://images.unsplash.com/photo-1566013656433-e818796d04f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          alt="About image"
+        />
       </Card>
     </div>
   );

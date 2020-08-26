@@ -1,6 +1,4 @@
 import React from "react";
-import "./ImageOverlay.css"
-import "./AlexBrush-Regular.ttf"
 
 import {
   Card,
@@ -33,7 +31,7 @@ const ImageOverlay = () => {
           <CardText>
             <small className="text-muted">Last updated 3 mins ago</small>
           </CardText>
-          <Button>Book Now!</Button>
+          <Button href="/booking">Book Now!</Button>
         </CardImgOverlay>
       </Card>
       <div className="imgOverlayClearBottom">

@@ -50,4 +50,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(Calender);
+export default connect(mapStateToProps)(Calendar);
