@@ -12,8 +12,7 @@ import Footer from "./components/Footer/Footer";
 import MenuTeaser from "./components/MenuTeaser/MenuTeaser";
 import MenuList from "./pages/MenuList";
 import CharacterList from "./pages/CharacterList";
-
-// import Calendar from "./components/Calendar";
+import Calendar from "./components/Calendar/Calendar";
 
 function App() {
   return (
@@ -38,7 +37,7 @@ function App() {
 
           <Route exact path="/charList" component={CharacterList} />
 
-          <Route>
+          <Route exact path="/availability" component={Calendar}>
             <Homepage />
           </Route>
         </Switch>
