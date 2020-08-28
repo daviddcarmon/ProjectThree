@@ -1,5 +1,5 @@
 import React from "react";
-import "./CharTeaser.css"
+import "./CharTeaser.css";
 import {
   Card,
   CardBody,
@@ -8,6 +8,7 @@ import {
   CardText,
   CardImg,
 } from "reactstrap";
+import ControlledCarousel from "../CharCarousel/CharCarousel";
 
 const CharTeaser = () => {
   return (
@@ -19,12 +20,7 @@ const CharTeaser = () => {
 
           <Button href="/charList">See full list of characters</Button>
         </CardBody>
-        <CardImg
-          bottom
-          width="100%"
-          src="https://images.unsplash.com/photo-1532117892888-38948e152b3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-          alt="About image"
-        />
+        <ControlledCarousel />
       </Card>
     </div>
   );
