@@ -43,10 +43,6 @@ const Navigation = () => {
             <NavLink to="/booking" activeClassName="selected">
               Book Now!
             </NavLink>
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
-            <a href="#" onclick="signOut();">
-              Sign out
-            </a>
           </Nav>
         </Collapse>
       </Navbar>
