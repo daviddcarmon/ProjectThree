@@ -4,18 +4,23 @@
     font-family: "curly";
     src:url("./AlexBrush-Regular.ttf");
   }
+
+  .imageoverlay-title{
+    font-family: "curly", "Times New Roman" !important;
+  }
   
   #change {
     background-color: yellow;
     font-family: "curly", "Times New Roman" !important;
+    text-align: center;
   }
 
   .imgOverlayClearTop {
     opacity: 0;
-    height:500px;
+    height:300px;
   }
 
   .imgOverlayClearBottom {
     opacity: 0;
-    height:100px;
+    height:300px;
   }
