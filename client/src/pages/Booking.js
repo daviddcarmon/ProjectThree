@@ -3,7 +3,7 @@ import React from "react";
 // import Confirmation from "./Confirmation";
 import Calendar from "../components/Calendar/Calendar";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
-// import bookingReducer from "../reducers/Bookings"
+// import {bookingReducer} from "../reducers/Bookings"
 
 // DISPATCH
 // export const handleSubmit = (e) => {
@@ -24,7 +24,7 @@ import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 function Booking() {
   return (
     <div>
-      <Form >
+      <Form>
         {/*<FormGroup onClick={handleSubmit} >*/}
         <FormGroup>
           <Label for="menuSelect">Menu Style</Label>

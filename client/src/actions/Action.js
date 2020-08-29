@@ -1,22 +1,18 @@
- 
 // ACTION
-const newBooking = () => {
-  return {
-    type: "NEW_BOOKING",
-    day: ``,
-    guest: ``,
-    menu: ``,
-    bookingDate: Date.now(),
-  };
+const newBooking = {
+  type: "NEW_BOOKING",
+  day: ``,
+  guest: ``,
+  menu: ``,
+  bookingDate: Date.now(),
+  deleteDate: null,
 };
 
-
-const deleteBooking = () => {
-  return {
-    type: "DELETE_BOOKING",
-    day: ``,
-    guest: ``,
-    menu: ``,
-    deleteDate: Date.now(),
-  };
+const deleteBooking = {
+  type: "DELETE_BOOKING",
+  day: ``,
+  guest: ``,
+  menu: ``,
+  bookingDate: ``,
+  deleteDate: Date.now(),
 };
