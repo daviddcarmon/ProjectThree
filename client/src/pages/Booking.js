@@ -3,32 +3,40 @@ import React from "react";
 // import Confirmation from "./Confirmation";
 import Calendar from "../components/Calendar/Calendar";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
+// import bookingReducer from "../reducers/Bookings"
+
+// DISPATCH
+// export const handleSubmit = (e) => {
+//   e.preventDefault();
+//   const action = {
+//     type: "NEW_BOOKING",
+//     payload: {
+//       day: this.day.current.value,
+//       guest: this.guest.current.value,
+//       menu: this.menu.current.value,
+//       bookingDate: Date.now(),
+//     },
+//   };
+//   const newState = bookingReducer(this.state, action);
+//   this.setState(newState);
+// };
 
 function Booking() {
   return (
     <div>
-      <Form>
+      <Form >
+        {/*<FormGroup onClick={handleSubmit} >*/}
         <FormGroup>
-          <Label for="exampleEmail">Name</Label>
-          <Input
-            type="name"
-            name="name"
-            id="exampleName"
-            placeholder="First & Last name"
-          />
+          <Label for="menuSelect">Menu Style</Label>
+          <Input type="select" name="select" id="menuSelect">
+            <option>Menu 1</option>
+            <option>Menu 2</option>
+            <option>Menu 3</option>
+          </Input>
         </FormGroup>
         <FormGroup>
-          <Label for="exampleEmail">Email</Label>
-          <Input
-            type="email"
-            name="email"
-            id="exampleEmail"
-            placeholder="with a placeholder"
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleSelect">Number of guests:</Label>
-          <Input type="select" name="select" id="numberOfGuests">
+          <Label for="guestSelect">Number of Guest</Label>
+          <Input type="select" name="selectMulti" id="guestSelect" multiple>
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -42,38 +50,9 @@ function Booking() {
           </Input>
         </FormGroup>
         <FormGroup>
-          <Label for="exampleSelect">Party Food Package:</Label>
-          <Input type="select" name="select" id="partyPackage">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </Input>
+          <Label for="notes">Notes and food restrictions</Label>
+          <Input type="textarea" name="text" id="notes" />
         </FormGroup>
-        <FormGroup>
-          <Label for="extraInfo">
-            {" "}
-            Please let us know of any allergies, food sensitivity, or if your
-            party will be more than 10 guests.
-          </Label>
-          <Input type="textarea" name="text" id="extraInfo" />
-        </FormGroup>
-
-        <FormGroup>
-          <Label for="exampleSelect">
-            If you would like to have a character come to your party, please
-            select which character:
-          </Label>
-          <Input type="select" name="select" id="exampleSelect">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </Input>
-        </FormGroup>
-        {/* will have to have button connect to confirmation page */}
         <Button href="/confirm">Book Party!</Button>
       </Form>
       <Calendar events={[]} />

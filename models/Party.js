@@ -6,18 +6,34 @@ const PartySchema = new Schema({
   day: {
     type: Date,
     trim: true,
+    required: true,
   },
   guest: {
     type: Number,
     trim: true,
+    required: true,
   },
   theme: {
-    type: Number,
+    type: String,
     trim: true,
+    required: true,
   },
   menu: {
-    type: Number,
+    type: String,
     trim: true,
+    required: true,
+  },
+  note: {
+    type: String,
+    trim: true,
+  },
+  bookingDate: {
+    type: Date,
+    default: Date.now,
+  },
+  deleteDate: {
+    type: Date,
+    default: null,
   },
 });
 
