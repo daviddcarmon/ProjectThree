@@ -30,8 +30,9 @@ const Navigation = () => {
 
   //   const toggle = () => setIsOpen(!isOpen);
   return (
-    <div>
-      <Navbar color="light" light expand="md">
+  
+    <div id="mainNav" bg >
+      <Navbar expand="md">
         <NavbarBrand href="/">Elevenses</NavbarBrand>
         <NavbarToggler />
         <Collapse navbar>
@@ -63,6 +64,8 @@ const Navigation = () => {
         </Collapse>
       </Navbar>
     </div>
+ 
+    
   );
 };
 

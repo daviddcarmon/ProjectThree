@@ -1,18 +1,6 @@
 
-
-.totalPage {
-  max-width: 100% !important;
-  /* background: green; */
-  background-image: url("./BG.jpg");
-  background-position:center;
-  background-repeat: no-repeat;
-  max-height: 100% !important;
-  background-size: 4000px;
-  background-attachment: fixed;
-  
-}
 #image-block{
-  background:orange;
+  background:blue;
 }
 
 #header-top{
@@ -22,13 +10,12 @@
   height:200px;
 }
 
+
 body {
-  max-width: 100% !important;
-  /* background: green; */
-  background-image: url("./BG.jpg");
+  background-image: url("./mainBG.png");
   background-position:center;
   background-repeat: no-repeat;
-  max-height: 100% !important;
-  background-size: 4000px;
+  background-size: 1522px;
   background-attachment: fixed;
 }
+

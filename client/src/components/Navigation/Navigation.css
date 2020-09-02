@@ -1,3 +1,9 @@
-#change {
-    background-color: green;
+div#mainNav {
+    background-color: green !important;
 }
+
+/* .navbar {
+    position: sticky;
+    background-color: yellow !important;
+} */
+
