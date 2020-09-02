@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const path = require("path");
 const Party = require("../models/Party");
+const passport = require("passport");
 
 router.get("/api/bookings", (req, res) => {
   Party.find({})

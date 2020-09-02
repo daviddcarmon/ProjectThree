@@ -12,10 +12,10 @@
     <!-- https://console.developers.google.com/apis/credentials?project=elevenses-2020&supportedpurview=project -->
     <!-- update to correct heroku for sign in and out -->
     <!-- use localhost3002 -->
-    <meta
+    <!-- <meta
       name="google-signin-client_id"
       content="164450595462-al02hqggron841978bc5a60hn8ee3dl0.apps.googleusercontent.com"
-    />
+    /> -->
 
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -48,12 +48,12 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
 
     <title>React App</title>
   </head>
   <body>
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <a href="#" onclick="signOut();">
       Sign out
     </a>
@@ -75,8 +75,8 @@
         //   console.log("User signed out.");
         // });
       }
-    </script>
-
+    </script> -->
+    <a id="google-btn" href="/auth/google">Sign In with Google</a>
     <div id="root"></div>
 
     <!--
