@@ -8,15 +8,19 @@
   .imageoverlay-title{
     font-family: "curly", "Times New Roman" !important;
   }
-  
-  #change {
-    background-color: yellow;
-    font-family: "curly", "Times New Roman" !important;
-    text-align: center;
+
+ .mainLogo {
+    background: url("./Elevenses.gif");
+    height:500px;
+    max-width: 100%;
+    margin-left: 270px;
+    background-repeat: no-repeat;
+
+    
   }
 
   .imgOverlayClearTop {
-    opacity: 0;
+    opacity: 1;
     height:300px;
   }
 
