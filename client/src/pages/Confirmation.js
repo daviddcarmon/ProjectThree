@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Card,
   CardImg,
@@ -9,14 +10,16 @@ import {
   Button,
 } from "reactstrap";
 
+import "../components/Confirmation/Confirmation.css"
+
 const Confirmation = (props) => {
   return (
-    <div>
+    <div id="confirmForm">
       <Card>
         <CardImg
           top
           width="100%"
-          src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          src="https://i.pinimg.com/originals/5c/40/0e/5c400e29ad897b33206825688a63f0cf.jpg"
           alt="Confirm party image"
         />
         <CardBody>

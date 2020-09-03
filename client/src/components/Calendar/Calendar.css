@@ -1,0 +1,30 @@
+#availability {
+    margin: 3rem;
+
+}
+
+.dayOfWeek {    
+    border-top: 1px solid rgb(148, 148, 182);
+    border-right: 1px solid rgb(148, 148, 182);
+    border-left: 1px solid rgb(148, 148, 182);
+    border-bottom: 1px solid rgb(148, 148, 182);
+    background-color: white;
+    
+ 
+
+}
+
+td {
+    font-weight: bold;
+    background-color: white;
+    padding: 1rem;
+    border: 1px rgb(148, 148, 182) solid !important;
+}
+
+th {
+    padding: 1rem;
+}
+
+/* element.style {
+    border: 2px gray ridge !important;
+} */
