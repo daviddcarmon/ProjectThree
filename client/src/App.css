@@ -1,21 +1,15 @@
 
-#image-block{
-  background:blue;
-}
-
-#header-top{
-  height:400px;
-}
-#header-bottom{
-  height:200px;
-}
-
-
 body {
   background-image: url("./mainBG.png");
   background-position:center;
   background-repeat: no-repeat;
   background-size: 1522px;
   background-attachment: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#image-block{
+  background:rgb(80, 80, 122);
 }
 
