@@ -9,42 +9,38 @@ import Calendar from "../components/Calendar/Calendar";
 
 function Homepage() {
   return (
-    <div className="App">
-      <Container>
+    <div className="container" id="teasers">
+      <Row>
+        <ImageOverlay />
+      </Row>
 
-          <Row>
-              <ImageOverlay />
-           </Row>
-
-           <Row>
-              <Col md="8">
-                <AboutInfo />
-              </Col>
-              <Col md="4" id="image-block">
-                IMAGE
-              </Col>
-            </Row>
-            <Row>
-              <Col md="4" id="image-block">
-                IMAGE
-              </Col>
-              <Col md="8">
-                <MenuTeaser />
-              </Col>
-            </Row>
-          <Row>
-            <Col md="8">
-            <CharTeaser />
-            </Col>
-            <Col md="4" id="image-block">
-                IMAGE
-            </Col>
-          </Row>
-          <Row>
-            <Calendar events={[]} />
-          </Row>
-
-      </Container>
+      <Row>
+        <Col md="8">
+          <AboutInfo />
+        </Col>
+        <Col md="4" id="image-block">
+          IMAGE
+        </Col>
+      </Row>
+      <Row>
+        <Col md="4" id="image-block">
+          IMAGE
+        </Col>
+        <Col md="8">
+          <MenuTeaser />
+        </Col>
+      </Row>
+      <Row>
+        <Col md="8">
+          <CharTeaser />
+        </Col>
+        <Col md="4" id="image-block">
+          IMAGE
+        </Col>
+      </Row>
+      <Row>
+        <Calendar events={[]} />
+      </Row>
     </div>
   );
 }

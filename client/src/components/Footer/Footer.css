@@ -1,9 +1,18 @@
+body{
+    min-width: 100%;
+    min-height: 100%;
+    /* padding-top:4.5rem; */
+}
+
 .footer {
-    position: fixed;
    left: 0;
-   bottom: 0;
+   bottom: -4rem;
    width: 100%;
    background-color: rgb(196, 178, 178);
    color: white;
    text-align: center;
+   margin-top: 10rem;
+   position: relative;
+
+
 }
