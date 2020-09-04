@@ -2,14 +2,15 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-// const mongojs = require("mongojs");
 // const logger = require("morgan");
 
 // configure dotenv
-require("dotenv").config();
+// require("dotenv").config();
 
 // new express app
 const app = express();
+
+app.use(logger("dev"));
 
 //  middleware
 app.use(express.urlencoded({ extended: true }));
