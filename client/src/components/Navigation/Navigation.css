@@ -1,6 +1,16 @@
 div#mainNav {
     background-color: green !important;
 }
+#nav-link{
+    margin-right:1em;
+    margin-left:1em;
+    margin-bottom:1em;
+}
+
+body{
+    min-height:75rem;
+    padding-top:4.5rem;
+}
 
 /* .navbar {
     position: sticky;

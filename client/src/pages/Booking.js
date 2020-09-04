@@ -1,8 +1,9 @@
 import React from "react";
 // will need to import confirmation page component for submit button
+import "../components/Form/Form.css";
 // import Confirmation from "./Confirmation";
 import Calendar from "../components/Calendar/Calendar";
-import { Button, Form, FormGroup, Label, Input } from "reactstrap";
+import { Button, Row, Col, Form, FormGroup, Label, Input } from "reactstrap";
 // import {bookingReducer} from "../reducers/Bookings"
 
 // DISPATCH
@@ -23,9 +24,13 @@ import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 function Booking() {
   return (
-    <div>
+    <div class="container" id="bookingForm">
+      <Row>
+        <Col>
       <Form>
         {/*<FormGroup onClick={handleSubmit} >*/}
+        <h1>Book With Us</h1>
+        <p class="text-center w-responsive mx-auto mb-5">Please answer the questions below to book!</p>
         <FormGroup>
           <Label for="menuSelect">Menu Style</Label>
           <Input type="select" name="select" id="menuSelect">
@@ -55,7 +60,11 @@ function Booking() {
         </FormGroup>
         <Button href="/confirm">Book Party!</Button>
       </Form>
+      </Col>
+      <Col>
       <Calendar events={[]} />
+      </Col>
+      </Row>
     </div>
   );
 }
