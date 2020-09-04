@@ -2,12 +2,16 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-var passport = require("passport");
-const mongojs = require("mongojs");
-const logger = require("morgan");
+const passport = require("passport");
+
+// const logger = require("morgan");
+const cookieSession = require("cookie-session");
+const keys = require("./config/keys");
+
+require("./services/passport");
 
 // configure dotenv
-require("dotenv").config();
+// require("dotenv").config();
 
 // new express app
 const app = express();
@@ -17,8 +21,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // //  routes'
-const routes = "./controller/routes";
-app.use(routes);
+// const routes = "./controller/routes";
+// app.use(routes);
 
 // serve static assets in production
 if (process.env.NODE_ENV === "production") {

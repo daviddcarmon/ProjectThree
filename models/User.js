@@ -1,29 +1,29 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
-const Schema = mongoose.Schema;
+// const Schema = mongoose.Schema;
 
-const UserSchema = new Schema({
-  firstName: {
-    type: String,
-    trim: true,
-  },
-  lastName: {
-    type: String,
-    trim: true,
-  },
-  email: {
-    type: String,
-    unique: true,
-  },
-  fullName: String,
-});
+// const UserSchema = new Schema({
+//   firstName: {
+//     type: String,
+//     trim: true,
+//   },
+//   lastName: {
+//     type: String,
+//     trim: true,
+//   },
+//   email: {
+//     type: String,
+//     unique: true,
+//   },
+//   fullName: String,
+// });
 
-UserSchema.methods.setFullName = function () {
-  this.fullName = `${this.firstName} ${this.lastName}`;
+// UserSchema.methods.setFullName = function () {
+//   this.fullName = `${this.firstName} ${this.lastName}`;
 
-  return this.fullName;
-};
+//   return this.fullName;
+// };
 
-const User = mongoose.model("User", UserSchema);
+// const User = mongoose.model("User", UserSchema);
 
-module.exports = User;
+// module.exports = User;
