@@ -1,8 +1,9 @@
 import React from "react";
+import "./Footer.css"
 
 const Footer = () => {
   return (
-    <div class="card">
+    <div class="card footer">
       <div class="card-header">Footer</div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">

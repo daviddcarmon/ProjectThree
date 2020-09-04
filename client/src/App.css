@@ -1,34 +1,15 @@
 
-
-.totalPage {
-  max-width: 100% !important;
-  /* background: green; */
-  background-image: url("./BG.jpg");
-  background-position:center;
-  background-repeat: no-repeat;
-  max-height: 100% !important;
-  background-size: 4000px;
-  background-attachment: fixed;
-  
-}
-#image-block{
-  background:orange;
-}
-
-#header-top{
-  height:400px;
-}
-#header-bottom{
-  height:200px;
-}
-
 body {
-  max-width: 100% !important;
-  /* background: green; */
-  background-image: url("./BG.jpg");
+  background-image: url("./mainBG.png");
   background-position:center;
   background-repeat: no-repeat;
-  max-height: 100% !important;
-  background-size: 4000px;
+  background-size: 1522px;
   background-attachment: fixed;
+  min-width: 100%;
+  min-height: 100%;
 }
+
+#image-block{
+  background:rgb(80, 80, 122);
+}
+

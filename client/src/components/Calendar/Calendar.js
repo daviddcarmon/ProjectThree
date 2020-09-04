@@ -2,10 +2,11 @@ import React from "react";
 // import { connect } from "react-redux";
 import { daysInCurrentMonth, firstDayOfMonth } from "../DateHelper/DateHelper";
 import { v4 as uuidv4 } from "uuid";
+import "./Calendar.css"
 
-const css = {
-  border: "solid 1px tomato",
-};
+// const css = {
+//   border: "",
+// };
 
 function Calendar(props) {
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -13,26 +14,26 @@ function Calendar(props) {
 
   return (
     <div id="availability">
-      <table style={css}>
-        <thead className="dayOfWeek" style={css}>
-          <tr style={css}>
+      <table>
+        <thead className="dayOfWeek">
+          <tr>
             {daysOfWeek.map((day) => (
-              <th style={css} key={uuidv4()}>
+              <th key={uuidv4()}>
                 {day}
               </th>
             ))}
           </tr>
         </thead>
-        <tbody className="weeks" style={css}>
+        <tbody className="weeks">
           {numberOfWeeks.map((week, weekIdx) => (
-            <tr key={uuidv4()} style={css}>
+            <tr key={uuidv4()} >
               {daysOfWeek.map((day, dayIdx) => {
                 let dayOfMonth = dayIdx + 1 + weekIdx * 7 - firstDayOfMonth;
                 let eventsToday = props.events.filter((event) => {
                   return Number(event.date.slice(-2)) === dayOfMonth;
                 });
                 return (
-                  <td key={uuidv4()} style={css}>
+                  <td key={uuidv4()} >
                     {dayOfMonth > daysInCurrentMonth || dayOfMonth < 1
                       ? null
                       : dayOfMonth}
