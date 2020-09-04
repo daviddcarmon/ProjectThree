@@ -5,6 +5,7 @@ const path = require("path");
 // const logger = require("morgan");
 const cookieSession = require("cookie-session");
 const keys = require("./config/keys");
+const passport = require("passport");
 
 require("./services/passport");
 
@@ -14,7 +15,7 @@ require("./services/passport");
 // new express app
 const app = express();
 
-app.use(logger("dev"));
+// app.use(logger("dev"));
 
 //  middleware
 app.use(express.urlencoded({ extended: true }));
