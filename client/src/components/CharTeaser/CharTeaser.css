@@ -1,0 +1,21 @@
+
+@font-face{
+  font-family: "cards";
+  src:url("./Charmonman-Regular.ttf");
+}
+
+
+
+#charDest {
+  height: 400px;
+   width: 750px;
+}
+
+
+#imageChar {
+    background-image: url("https://i.pinimg.com/originals/7c/62/30/7c6230b8e3b41ceb328825c0468be681.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 590px 400px;
+
+  }

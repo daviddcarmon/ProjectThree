@@ -18,12 +18,12 @@ function Homepage() {
         <Col md="8">
           <AboutInfo />
         </Col>
-        <Col md="4" id="image-block">
+        <Col md="4" id="imageAbout">
           IMAGE
         </Col>
       </Row>
       <Row>
-        <Col md="4" id="image-block">
+        <Col md="4" id="imageMenu">
           IMAGE
         </Col>
         <Col md="8">
@@ -34,7 +34,7 @@ function Homepage() {
         <Col md="8">
           <CharTeaser />
         </Col>
-        <Col md="4" id="image-block">
+        <Col md="4" id="imageChar">
           IMAGE
         </Col>
       </Row>

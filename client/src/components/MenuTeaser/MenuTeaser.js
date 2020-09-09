@@ -8,13 +8,14 @@ import {
   CardImg,
 } from "reactstrap";
 import ControlledCarousel from "../MenuCarousel/MenuCarousel";
+import "./MenuTeaser.css"
 
 const MenuTeaser = () => {
   return (
     <div id="menuInfo">
       <Card id="menuDest">
         <CardBody>
-          <CardTitle>Menu Teaser</CardTitle>
+          <CardTitle>The Menu</CardTitle>
           <CardText>*** menu content here ***</CardText>
 
           <Button href="/menuList">See all party packages</Button>
