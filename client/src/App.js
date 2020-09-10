@@ -22,11 +22,11 @@ function App() {
         <Switch>
           <Route exact path={["/"]} component={Homepage} />
 
-          <Route exact path="/booking">
+          <Route exact path="/bookings">
             <Booking />
           </Route>
 
-          <Route exact path="/confirm">
+          <Route exact path="/bookings/:id">
             <Confirmation />
           </Route>
           <Route exact path="/menuInfo" component={MenuTeaser} />

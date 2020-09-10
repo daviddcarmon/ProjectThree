@@ -27,7 +27,8 @@ module.exports = {
       if (err) {
         console.log(`Error at post`);
       }
-      res.json({ newBooking: result.booking });
+      console.log(result);
+      res.json({ newBooking: result });
     });
   },
 
