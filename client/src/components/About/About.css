@@ -19,7 +19,17 @@
     background-image: url("./aboutBG.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 450px 500px;   
+    background-size: 450px 500px;
+    background-color: rgb(216, 167, 116);
+    
+  }
+
+  #imageAboutHomepage {
+    background-color: rgb(216, 167, 116);
+    margin-left:0rem !important;
+    margin-right:0rem !important;
+    border: 0px !important;
+    
   }
 
 /* div.card-title {
