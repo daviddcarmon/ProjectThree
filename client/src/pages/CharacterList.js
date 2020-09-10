@@ -41,7 +41,7 @@ function CharacterList() {
                   <CardImg
                     top
                     width="100%"
-                    src="https://vignette.wikia.nocookie.net/lotr/images/d/da/Legolas_portrait_-_EmpireMag.jpg/revision/latest/scale-to-width-down/340?cb=20130627111817"
+                    src={data.image}
                     alt="Card image cap"
                     id="charListImg"
                   />
