@@ -14,14 +14,21 @@
     background-repeat: no-repeat;
     background-size: 500px 470px;
     background-color: rgb(216, 167, 116);
+    border: none;
+
 }
 
+#charTeaserHomepage {
+  background-color: rgb(216, 167, 116);
+  margin-left: 0px !important;
+}
 
 #imageChar {
     background-image: url("https://i.pinimg.com/originals/7c/62/30/7c6230b8e3b41ceb328825c0468be681.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 600px 500px;
+    border: none;
 
   }
 

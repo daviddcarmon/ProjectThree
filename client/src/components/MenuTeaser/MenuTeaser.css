@@ -13,15 +13,29 @@
         background-repeat: no-repeat;
         background-size: 500px 470px;
         background-color: rgb(128, 0, 0);
+        border: none;
+
 
 }
+
+#menuTeaserCol {
+  background-color:rgb(128, 0, 0);;
+  margin-left: 0rem !important;
+  
+}
+
     
 
-#imageMenu {
+
+
+
+#imageMenuHomepage {
     background-image: url("./menutease.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 450px 500px; 
+    background-color: rgb(128, 0, 0);
+    
     }
 
  #menuBtn {

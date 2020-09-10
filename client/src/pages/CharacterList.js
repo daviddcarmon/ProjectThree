@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import "../components/Character/Character.css";
+
 import {
   Card,
   Button,
@@ -8,6 +10,9 @@ import {
   CardText,
   CardDeck,
   CardBody,
+  Container,
+  Row,
+  Col,
 } from "reactstrap";
 
 import API from "../utils/API";
@@ -26,29 +31,37 @@ function CharacterList() {
     });
   }, []);
   return (
+    <div id="charListBody">
+    <Container id="charListArea">
     <CardDeck>
      
       
   
       
-
+<Row>
       {charArray.map((data) => (
-        <Card>
+        <Col xs="12" md="4">
+        <Card id="charListCardBody">
           <CardImg
             top
             width="100%"
-            src="/assets/256x186.svg"
+            src="https://vignette.wikia.nocookie.net/lotr/images/d/da/Legolas_portrait_-_EmpireMag.jpg/revision/latest/scale-to-width-down/340?cb=20130627111817"
             alt="Card image cap"
-          />
+          id="charListImg"/>
           <CardBody>
             <CardTitle>{data.name}</CardTitle>
             <CardText>{data.characterDescription}</CardText>
           </CardBody>
         </Card>
+        </Col>
       ))}
 
-      <Button>Book Now!</Button>
+      <Button id="bookNowBtn">Book Now!</Button>
+        </Row>
     </CardDeck>
+    </Container>
+    </div>
+
   );
 }
 
