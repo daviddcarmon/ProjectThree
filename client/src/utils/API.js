@@ -27,4 +27,8 @@ export default {
   getCharacters: function () {
     return axios.get("/api/characters");
   },
+
+  getMenus: function () {
+    return axios.get("/api/menu");
+  },
 };

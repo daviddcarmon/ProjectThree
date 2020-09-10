@@ -56,4 +56,15 @@ router.get("/api/characters", (req, res) => {
     });
 });
 
+router.get("/api/menu", (req, res) => {
+  Menu.find({})
+    .then((data) => {
+      res.json(data);
+    })
+    .catch((err) => {
+      res.status(404);
+      console.log(err);
+    });
+});
+
 module.exports = router;
