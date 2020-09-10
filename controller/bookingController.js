@@ -23,13 +23,9 @@ module.exports = {
   },
 
   create: function (req, res) {
-    db.Party.create(req.body, function (result, err) {
-      if (err) {
-        console.log(`Error at post`);
-      }
-      console.log(result);
-      res.json({ newBooking: result });
-    });
+    db.Party.create(req.body)
+      .then((data) => res.json(data))
+      .catch((err) => res.status(422).json(err));
   },
 
   delete: function (req, res) {

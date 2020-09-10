@@ -21,8 +21,6 @@ import API from "../utils/API";
 //   this.setState(newState);
 // };
 
-// const [state, setState] = useState({});
-
 function Booking() {
   const [form, setForm] = useState({});
   const [booking, setBooking] = useState({});
@@ -34,39 +32,36 @@ function Booking() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(form);
 
     if (!form.date || !form.menu) {
       alert(`All fields are required.`);
       return;
     }
-    console.log({ form });
+    API.saveBooking({
+      day: form.date,
+      guest: form.guest,
+      characters: form.characters,
+      menu: form.menu,
+      note: form.note,
+    })
+      .then((res) => {
+        console.log(res.data._id);
+        loadBookings(res.data._id);
+        window.location.replace(`/bookings/${ res.data._id }`);
 
-    // API.saveBooking({
-    //   day: form.date,
-    //   guest: form.guest,
-    //   characters: form.character,
-    //   menu: form.menu,
-    //   note: form.note,
-    // })
-    //   .then((res) => {
-    //     console.log(res.data._id);
-    //     loadBookings(res.data._id)
-    //     window.location.href = "/bookings/" + res.data._id;
-
-    //     console.log(res);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   function loadBookings() {
-    API.getBooking()
+    API.getBookings()
       .then((res) => {
         setBooking(res.data);
         // console.log({ booking });
-        console.log(res.data);
+        console.log(res);
       })
       .catch((err) => {
         console.log(err);
