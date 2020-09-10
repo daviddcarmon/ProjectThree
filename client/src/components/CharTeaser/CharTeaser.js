@@ -12,6 +12,7 @@ import {
 import "./CharTeaser.css"
 
 
+
 const CharTeaser = () => {
   return (
     <div id="charInfo">

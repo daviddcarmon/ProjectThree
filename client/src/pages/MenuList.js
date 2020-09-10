@@ -23,10 +23,11 @@ const MenuList = () => {
         />
         <CardBody>
           <CardTitle>Party Package #1</CardTitle>
-          <CardSubtitle>about this package</CardSubtitle>
+
           <CardText>Full contents of package</CardText>
         </CardBody>
       </Card>
+
       <Button>Book Now!</Button>
     </CardDeck>
   );

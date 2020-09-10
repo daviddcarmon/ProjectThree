@@ -20,7 +20,6 @@ const MenuTeaser = () => {
 
           <Button href="/menuList">See all party packages</Button>
         </CardBody>
-        
       </Card>
     </div>
   );
