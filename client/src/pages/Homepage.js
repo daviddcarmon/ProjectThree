@@ -10,13 +10,13 @@ import Calendar from "../components/Calendar/Calendar";
 
 function Homepage() {
   return (
-    <div className="container" id="teasers">
+    <div className="containerHomepage" >
       <Row>
         <ImageOverlay />
       </Row>
 
       <Row>
-        <Col md="8">
+        <Col md="8" id="imageAboutHomepage">
           <AboutInfo />
         </Col>
         <Col md="4" id="imageAbout">
@@ -24,22 +24,27 @@ function Homepage() {
         </Col>
       </Row>
       <Row>
-        <Col md="4" id="imageMenu">
-          
+        <Col md="4" id="imageMenuHomepage">
         </Col>
-        <Col md="8">
+        <Col md="8" id="menuTeaserCol">
           <MenuTeaser />
         </Col>
       </Row>
       <Row>
-        <Col md="8">
+        <Col md="8" id="charTeaserHomepage">
           <CharTeaser />
         </Col>
         <Col md="4" id="imageChar">
         </Col>
       </Row>
       <Row>
+
+        <Col md="4" id="calendarHomepage">
         <Calendar events={[]} />
+        </Col>
+        <Col md="8" id="calendarTeaserCol">
+          <MenuTeaser />
+        </Col>
       </Row>
     </div>
   );

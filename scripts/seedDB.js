@@ -11,16 +11,21 @@ let CharacterSeed = [
     name: "Frodo Baggins",
     characterDescription:
       "The ring-bearer, a young hobbit, chosen by the wizrd Gandalf to return the ring to Mordor. The ring changed Frodo from an ordinary hobbit of exceptional qualities into someone extraordinary, becoming a legend, eventually leaving the land of mortals to a life with the immortal elves. Have this legend visit your next LOTR watch party! ",
+    image:
+      "https://i2.wp.com/www.theonering.net/torwp/wp-content/uploads/2011/01/frodo_sweetw300h456.jpg?ssl=1",
   },
   {
     name: "Bilbo Baggins",
     characterDescription:
       "Frodo's uncle, who possesses the ring at the beginning, a playful old hobbit, but very protective and restless about the ring. Invite this cheerful old hobbit to your next LOTR watch party!  ",
+    image:
+      "https://cdn.costumewall.com/wp-content/uploads/2018/10/bilbo-baggins.jpg",
   },
   {
     name: "Gimli",
     characterDescription:
       "This bearded, ax-wielding warrior dwarf is a brave and loyal member of the fellowship of the ring. Invite him to your next LOTR watch party for some sure entertainment!",
+    image: "./gimli.png",
   },
   {
     name: "Aragorn",

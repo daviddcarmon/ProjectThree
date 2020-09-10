@@ -1,0 +1,23 @@
+ #charListArea {
+    /* background-color: rgb(255, 255, 255); */
+    padding: 3rem 8rem;
+
+    width:100%;
+
+}
+
+#charListBody{
+    width:100% !important;
+    margin: 0rem 0rem !important;
+}
+
+#charListImg{
+    box-shadow: 2px 3px 9px #888888;
+}
+
+#charListCardBody{
+    box-shadow: 0px 0px 8px #888888;
+    margin: 1rem 0rem !important;
+
+
+}

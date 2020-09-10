@@ -9,6 +9,7 @@ import {
   CardDeck,
   CardBody,
 } from "reactstrap";
+import "../components/Menu/Menu.css";
 
 import API from "../utils/API";
 
@@ -26,25 +27,26 @@ function MenuList() {
     });
   }, []);
   return (
-    <CardDeck>
-      {menuArray.map((data) => (
-        <Card>
-          <CardImg
-            top
-            width="100%"
-            src="/assets/256x186.svg"
-            alt="Card image cap"
-          />
-          <CardBody>
-            <CardTitle>{data.partyPackageName}</CardTitle>
+    <div>
+      <CardDeck>
+        {menuArray.map((data) => (
+          <Card>
+            <CardImg
+              top
+              width="100%"
+              src="/assets/256x186.svg"
+              alt="Card image cap"
+            />
+            <CardBody>
+              <CardTitle>{data.partyPackageName}</CardTitle>
 
-            <CardText>{data.menuDescription}</CardText>
-          </CardBody>
-        </Card>
-      ))}
-
+              <CardText>{data.menuDescription}</CardText>
+            </CardBody>
+          </Card>
+        ))}
+      </CardDeck>
       <Button>Book Now!</Button>
-    </CardDeck>
+    </div>
   );
 }
 

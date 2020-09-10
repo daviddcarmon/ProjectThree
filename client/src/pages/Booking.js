@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../components/Form/Form.css";
 import Calendar from "../components/Calendar/Calendar";
 import { Button, Row, Col, Form, FormGroup, Label, Input } from "reactstrap";
@@ -68,6 +68,29 @@ function Booking() {
       });
   }
 
+  const [state, setState] = useState({
+    menuArray: [],
+  });
+
+  const { menuArray } = state;
+
+  const [charstate, charsetState] = useState({
+    charArray: [],
+  });
+
+  const { charArray } = charstate;
+
+  useEffect(() => {
+    API.getMenus().then(function (data) {
+      console.log(data);
+      setState({ ...state, menuArray: data.data });
+    });
+    API.getCharacters().then(function (data) {
+      console.log(data.data);
+      charsetState({ ...charstate, charArray: data.data });
+    });
+  }, []);
+
   return (
     <div class="container box" id="bookingForm">
       <Row>
@@ -94,9 +117,9 @@ function Booking() {
                 id="menuSelect"
                 onChange={handleForm}
               >
-                <option>Menu 1</option>
-                <option>Menu 2</option>
-                <option>Menu 3</option>
+                {menuArray.map((data) => (
+                  <option>{data.partyPackageName}</option>
+                ))}
               </Input>
               <Label for="characterSelect">Character Option</Label>
               <Input
@@ -105,11 +128,9 @@ function Booking() {
                 id="characterSelect"
                 onChange={handleForm}
               >
-                <option>Character 1</option>
-                <option>Character 2</option>
-                <option>Character 3</option>
-                <option>Character 3</option>
-                <option>Character 3</option>
+                {charArray.map((data) => (
+                  <option>{data.name}</option>
+                ))}
               </Input>
             </FormGroup>
             <FormGroup>
