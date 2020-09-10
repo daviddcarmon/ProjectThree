@@ -34,11 +34,6 @@ function CharacterList() {
     <div id="charListBody">
     <Container id="charListArea">
     <CardDeck>
-     
-      
-  
-      
-<Row>
       {charArray.map((data) => (
         <Col xs="12" md="4">
         <Card id="charListCardBody">
