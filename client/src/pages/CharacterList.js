@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   Card,
@@ -12,20 +12,22 @@ import {
 
 import API from "../utils/API";
 
-class CharacterList extends Component {
-  state = {
+function CharacterList() {
+  const [state, setState] = useState({
     charArray: [],
-  };
+  });
 
-  componentDidMount() {
-    // API.getCharacters().then(function (data) {
-    //   this.setState({ charArray: data });
-    // });
-  }
+  const { charArray } = state;
 
-  render() {
-    return (
-      <CardDeck>
+  useEffect(() => {
+    API.getCharacters().then(function (data) {
+      console.log(data.data);
+      setState({ ...state, charArray: data.data });
+    });
+  }, []);
+  return (
+    <CardDeck>
+      {charArray.map((data) => (
         <Card>
           <CardImg
             top
@@ -34,15 +36,15 @@ class CharacterList extends Component {
             alt="Card image cap"
           />
           <CardBody>
-            <CardTitle>Character choice #1</CardTitle>
-            <CardText>Full character description</CardText>
+            <CardTitle>{data.name}</CardTitle>
+            <CardText>{data.characterDescription}</CardText>
           </CardBody>
         </Card>
+      ))}
 
-        <Button>Book Now!</Button>
-      </CardDeck>
-    );
-  }
+      <Button>Book Now!</Button>
+    </CardDeck>
+  );
 }
 
 export default CharacterList;
