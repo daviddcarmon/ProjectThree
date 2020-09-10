@@ -14,7 +14,7 @@ const Navigation = () => {
   return (
     <div id="mainNav">
       <nav class="navbar navbar-expand-md fixed-top">
-        <a class="navbar-brand">
+        <a class="navbar-brand" id="navhead">
           Elevenses
         </a>
         <button

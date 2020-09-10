@@ -3,34 +3,50 @@ body{
     padding-top:4.5rem;
 }
 
+
+@font-face{
+    font-family: "nav";
+    src:url("./EagleLake-Regular.ttf");
+  }
+
+
 #nav-link{
     margin-right:1em;
     margin-left:1em;
     margin-bottom:1em;
 }
 
-.navbar {
-    background-color: rgb(189, 172, 172);
+
+nav.navbar.navbar-expand-md.fixed-top {
+    background: transparent;
     
 }
 
-/* .navbar-brand {
-    color: purple;
-} */
+div#navbarCollapse.collapse.navbar-collapse {
+    display: inline-block;
+    text-align: center;
+    margin-left: 55%;
+}
+
 
 a {
-    color: rgb(189, 122, 46);
+    color: rgb(228, 176, 98);
+    font-family: "nav";
+}
+
+a#navhead.navbar-brand {
+    font-size: 22px;
+}
+
+a.navbar-brand {
+    margin-left: 12px;
+    color: rgb(0, 112, 0) !important;
 }
 
 a.nav-link.selected:hover {
-    color: rgb(238, 143, 0);
+    color: rgb(223, 82, 6);
 }
 
 a.nav-link:hover {
-    color: rgb(238, 143, 0);
+    color: rgb(223, 82, 6);
 }
-
-
-/* .navbar-dark .navbar-nav .active>.nav-link {
-    color: rgb(86, 130, 95)
-} */

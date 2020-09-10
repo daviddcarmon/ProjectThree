@@ -18,12 +18,12 @@ const ImageOverlay = () => {
       <div className="imgOverlayClearTop">
 
       </div>
-      <div className="mainLogo">
+      <div className="box" id="mainLogo">
 
       </div>
       <div>
       
-      <Button className="text-center" href="/booking">Book Now!</Button>
+      {/* <Button className="text-center" href="/booking">Book Now!</Button> */}
       </div>
       <div className="imgOverlayClearBottom">
 

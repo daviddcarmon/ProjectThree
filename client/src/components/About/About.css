@@ -1,0 +1,28 @@
+
+@font-face{
+  font-family: "cards";
+  src:url("./Charmonman-Regular.ttf");
+}
+
+
+#aboutDest {
+   height: 400px;
+   width: 750px;
+  }
+
+#imageAbout {
+    background-image: url("./aboutBG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 410px 400px;   
+  }
+
+div.card-title {
+  font-family: "nav";
+  font-size: 80px;
+}
+
+p.card-text {
+  font-family: "cards";
+
+}

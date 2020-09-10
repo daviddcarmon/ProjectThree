@@ -9,12 +9,16 @@ import {
   CardImg,
 } from "reactstrap";
 
+import "./CharTeaser.css"
+
+
+
 const CharTeaser = () => {
   return (
     <div id="charInfo">
       <Card id="charDest">
         <CardBody>
-          <CardTitle>Character Teaser</CardTitle>
+          <CardTitle>Add to the party!</CardTitle>
           <CardText>*** character content here ***</CardText>
 
           <Button href="/charList">See full list of characters</Button>

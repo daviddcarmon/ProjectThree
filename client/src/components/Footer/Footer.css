@@ -8,11 +8,10 @@ body{
    left: 0;
    bottom: -4rem;
    width: 100%;
-   background-color: rgb(196, 178, 178);
+   background: transparent;
    color: white;
    text-align: center;
    margin-top: 10rem;
    position: relative;
-
 
 }

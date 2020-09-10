@@ -14,18 +14,10 @@ const AboutInfo = () => {
     <div id="about">
       <Card id="aboutDest">
         <CardBody>
-          <CardTitle>About Info</CardTitle>
-          <CardText>*** about content here ***</CardText>
-          <CardText>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </CardText>
+          <CardTitle>Our Story</CardTitle>
+          <CardText>This is going to be a paragraph about the app</CardText>
         </CardBody>
-        <CardImg
-          bottom
-          width="100%"
-          src="https://images.unsplash.com/photo-1506466010722-395aa2bef877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-          alt="About image"
-        />
+        
       </Card>
     </div>
   );

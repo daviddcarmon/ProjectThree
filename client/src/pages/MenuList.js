@@ -23,6 +23,7 @@ const MenuList = () => {
         />
         <CardBody>
           <CardTitle>Party Package #1</CardTitle>
+
           <CardText>Full contents of package</CardText>
         </CardBody>
       </Card>

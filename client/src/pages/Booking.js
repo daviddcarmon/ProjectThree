@@ -24,7 +24,7 @@ import { Button, Row, Col, Form, FormGroup, Label, Input } from "reactstrap";
 
 function Booking() {
   return (
-    <div class="container" id="bookingForm">
+    <div class="container box" id="bookingForm">
       <Row>
         <Col>
       <Form>
