@@ -27,11 +27,6 @@ function CharacterList() {
   }, []);
   return (
     <CardDeck>
-     
-      
-  
-      
-
       {charArray.map((data) => (
         <Card>
           <CardImg

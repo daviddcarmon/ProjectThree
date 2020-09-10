@@ -1,7 +1,13 @@
 import React from "react";
-import { Row, Col, Container } from "reactstrap";
+
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import API from "../utils/API"
 
 import {
+  Row,
+  Col,
+  Container,
   Card,
   CardImg,
   CardText,
@@ -11,9 +17,33 @@ import {
   Button,
 } from "reactstrap";
 
-import "../components/Confirmation/Confirmation.css"
+import "../components/Confirmation/Confirmation.css";
 
 const Confirmation = (props) => {
+  const [booking, setBooking] = useState({});
+
+  const { id } = useParams();
+  useEffect(() => {
+    API.getBooking(id)
+      .then((res) => {
+        setBooking(res.data);
+        console.log(booking);
+        console.log(res);
+      })
+      .catch((err) => {
+        window.location.replace("/");
+        console.log(err);
+      });
+  }, []);
+
+  // const handleDelete = () => {
+  //   API.delete(id)
+  //     .then(() => window.location.replace("/"))
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
+
   return (
   <div className="container" id="confirmContainer">
   <div id="confirmForm">
