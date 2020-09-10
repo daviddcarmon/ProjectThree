@@ -67,12 +67,16 @@ db.Characters.deleteMany({})
 
 let MenuSeed = [
   {
-    partyPackageName: "Gold",
-    menuDescription: "main menu items",
+    partyPackageName: "Dragon Glass",
+    menuDescription: "description",
   },
   {
-    name: "Silver",
-    characterDescription: "silver menu items",
+    partyPackageName: "Steel",
+    menuDescription: "silver menu items",
+  },
+  {
+    partyPackageName: "Silver",
+    menuDescription: "silver menu items",
   },
 ];
 

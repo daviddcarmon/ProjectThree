@@ -57,6 +57,10 @@ app.use(passport.session());
 //valid JS. when we require the authRoutes file it returns a function and then we immediately call that function with the app object. app is passed into the arrow function, we attach the 2 route handlers to it
 require("./routes/authRoutes")(app);
 
+const router = require("./routes");
+app.use(router);
+// app.use(require("./routes/api.js"));
+
 // define PORT
 const PORT = process.env.PORT || 5001;
 

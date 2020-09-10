@@ -8,7 +8,6 @@ import {
   CardText,
   CardImg,
 } from "reactstrap";
-import ControlledCarousel from "../CharCarousel/CharCarousel";
 
 const CharTeaser = () => {
   return (
@@ -20,7 +19,6 @@ const CharTeaser = () => {
 
           <Button href="/charList">See full list of characters</Button>
         </CardBody>
-        <ControlledCarousel />
       </Card>
     </div>
   );
