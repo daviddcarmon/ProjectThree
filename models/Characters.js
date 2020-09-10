@@ -16,6 +16,7 @@ const CharacterSchema = new Schema({
   image: {
     type: String,
     trim: true,
+    required: true,
   },
 });
 
