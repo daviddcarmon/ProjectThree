@@ -23,4 +23,8 @@ export default {
   saveBooking: function (bookingData) {
     return axios.post("/api/bookings", bookingData);
   },
+
+  getCharacters: function () {
+    return axios.get("/api/characters");
+  },
 };

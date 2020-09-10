@@ -7,7 +7,6 @@ import {
   CardText,
   CardImg,
 } from "reactstrap";
-import ControlledCarousel from "../MenuCarousel/MenuCarousel";
 
 const MenuTeaser = () => {
   return (
@@ -21,7 +20,6 @@ const MenuTeaser = () => {
         </CardBody>
         {/* <MenuCarousel /> */}
 
-        <ControlledCarousel />
         {/* <CardImg
           bottom
           width="100%"

@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const bookingController = require("../../controllers/bookingController");
+const bookingController = require("../../controller/bookingController");
 
 router.route("/").get(bookingController.findAll).post(bookingController.create);
 

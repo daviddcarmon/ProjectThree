@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const path = require("path");
 const Party = require("../models/Party");
+const Characters = require("../models/Characters");
 const passport = require("passport");
 
 router.get("/api/bookings", (req, res) => {
@@ -42,6 +43,17 @@ router.delete("/api/bookings/:id", function (req, res) {
     }
   });
   res.status(200).end();
+});
+
+router.get("/api/characters", (req, res) => {
+  Character.find({})
+    .then((data) => {
+      res.json(data);
+    })
+    .catch((err) => {
+      res.status(404);
+      console.log(err);
+    });
 });
 
 module.exports = router;
