@@ -4,15 +4,13 @@ import "./Footer.css"
 const Footer = () => {
   return (
     <div class="card footer">
-      <div class="card-header">Footer</div>
-      <div class="card-body">
+      <div class="card-body" id="footCard">
         <blockquote class="blockquote mb-0">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.
+          “There’s some good in this world, Mr. Frodo… and it’s worth fighting for.”
           </p>
           <footer class="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
+            Samwise Gamgee
           </footer>
         </blockquote>
       </div>

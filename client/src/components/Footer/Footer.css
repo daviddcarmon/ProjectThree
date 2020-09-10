@@ -4,14 +4,32 @@ body{
     /* padding-top:4.5rem; */
 }
 
+@font-face{
+    font-family: "nav";
+    src:url("./EagleLake-Regular.ttf");
+  }
+
 .footer {
    left: 0;
    bottom: -4rem;
    width: 100%;
-   background: transparent;
+   background: rgba(0, 128, 0, 0.158);
    color: white;
    text-align: center;
    margin-top: 10rem;
    position: relative;
+   border: none;
 
 }
+
+#footCard {
+    color: white;
+    font-family: "nav";
+    
+
+}
+
+footer.blockquote-footer {
+    color: rgb(228, 176, 98);
+}
+

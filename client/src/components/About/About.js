@@ -14,8 +14,6 @@ const AboutInfo = () => {
     <div id="about">
       <Card id="aboutDest">
         <CardBody>
-          <CardTitle>Our Story</CardTitle>
-          <CardText>This is going to be a paragraph about the app</CardText>
         </CardBody>
         
       </Card>
