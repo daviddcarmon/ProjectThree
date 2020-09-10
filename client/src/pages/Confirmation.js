@@ -1,8 +1,13 @@
+import React from "react";
+
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import API from "../utils/API"
 
 import {
+  Row,
+  Col,
+  Container,
   Card,
   CardImg,
   CardText,
@@ -40,22 +45,30 @@ const Confirmation = (props) => {
   // };
 
   return (
-    <div id="confirmForm">
-      <Card>
-        <CardImg
-          top
-          width="100%"
-          src="https://i.pinimg.com/originals/5c/40/0e/5c400e29ad897b33206825688a63f0cf.jpg"
-          alt="Confirm party image"
-        />
-        <CardBody>
-          <CardTitle>Confirmation Page</CardTitle>
-          <CardSubtitle>Thanks for booking your party!</CardSubtitle>
-          <CardText>Party confirmation information.</CardText>
-          <Button href="/">Back to home screen</Button>
-        </CardBody>
-      </Card>
+  <div className="container" id="confirmContainer">
+  <div id="confirmForm">
+    <Row>
+      <Col md="12">
+        <h1>PARTY BOOKED!</h1>
+      </Col>
+    </Row>
+    <div id="confirmContent">
+    <Row>
+    <Col md="5">
+      <h1>CALENDER SHOWING YOUR DATE BOOKED</h1>
+      <div class="vl"></div>
+    </Col>
+    <Col md="7">
+      <h1>USER CONTENT</h1>
+    </Col>
+    </Row>
+    <Row>
+    <Button href="/" id="confirmBtn">Back to home screen</Button>
+
+    </Row>
     </div>
+  </div>
+  </div>
   );
 };
 

@@ -6,21 +6,26 @@
 
 
 #aboutDest {
-   height: 400px;
+   height: 500px;
    width: 750px;
+   background-image: url("./AboutInfo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px 470px;
+    background-color: rgb(216, 167, 116);
   }
 
 #imageAbout {
     background-image: url("./aboutBG.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 410px 400px;   
+    background-size: 450px 500px;   
   }
 
-div.card-title {
+/* div.card-title {
   font-family: "nav";
   font-size: 80px;
-}
+} */
 
 p.card-text {
   font-family: "cards";

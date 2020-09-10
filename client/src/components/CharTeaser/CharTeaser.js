@@ -18,10 +18,8 @@ const CharTeaser = () => {
     <div id="charInfo">
       <Card id="charDest">
         <CardBody>
-          <CardTitle>Add to the party!</CardTitle>
-          <CardText>*** character content here ***</CardText>
 
-          <Button href="/charList">See full list of characters</Button>
+          <Button href="/charList" id="charBtn">See full list of characters</Button>
         </CardBody>
       </Card>
     </div>

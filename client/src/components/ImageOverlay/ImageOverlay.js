@@ -23,7 +23,6 @@ const ImageOverlay = () => {
       </div>
       <div>
       
-      {/* <Button className="text-center" href="/booking">Book Now!</Button> */}
       </div>
       <div className="imgOverlayClearBottom">
 

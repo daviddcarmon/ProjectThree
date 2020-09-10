@@ -7,6 +7,7 @@ import AboutInfo from "../components/About/About";
 import ImageOverlay from "../components/ImageOverlay/ImageOverlay";
 import Calendar from "../components/Calendar/Calendar";
 
+
 function Homepage() {
   return (
     <div className="container" id="teasers">
@@ -19,12 +20,12 @@ function Homepage() {
           <AboutInfo />
         </Col>
         <Col md="4" id="imageAbout">
-          IMAGE
+          
         </Col>
       </Row>
       <Row>
         <Col md="4" id="imageMenu">
-          IMAGE
+          
         </Col>
         <Col md="8">
           <MenuTeaser />
@@ -35,7 +36,6 @@ function Homepage() {
           <CharTeaser />
         </Col>
         <Col md="4" id="imageChar">
-          IMAGE
         </Col>
       </Row>
       <Row>
