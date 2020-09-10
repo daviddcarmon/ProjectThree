@@ -4,24 +4,24 @@ const Schema = mongoose.Schema;
 
 const PartySchema = new Schema({
   day: {
-    type: Date,
+    type: String,
     trim: true,
     required: true,
   },
   guest: {
-    type: Number,
-    trim: true,
-    required: true,
-  },
-  theme: {
     type: String,
     trim: true,
-    required: true,
+    // required: true,
+  },
+  characters: {
+    type: String,
+    trim: true,
+    // required: true,
   },
   menu: {
     type: String,
     trim: true,
-    required: true,
+    // required: true,
   },
   note: {
     type: String,
@@ -30,10 +30,6 @@ const PartySchema = new Schema({
   bookingDate: {
     type: Date,
     default: Date.now,
-  },
-  deleteDate: {
-    type: Date,
-    default: null,
   },
 });
 

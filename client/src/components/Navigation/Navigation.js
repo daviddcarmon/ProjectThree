@@ -13,27 +13,29 @@ import { NavHashLink as NavLink } from "react-router-hash-link";
 const Navigation = () => {
   return (
     <div id="mainNav">
-      <nav class="navbar navbar-expand-md fixed-top">
-        <a class="navbar-brand" id="navhead">
+      <nav className="navbar navbar-expand-md fixed-top">
+        <a className="navbar-brand" id="navhead">
           Elevenses
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarCollapse"
           aria-controls="navbarCollapse"
           aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+        <div className="collapse navbar-collapse" id="navbarCollapse">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
               <NavLink
                 to="/#about"
                 activeClassName="selected"
-                className="nav-link">
+                className="nav-link"
+              >
                 About
               </NavLink>
             </li>
@@ -41,7 +43,8 @@ const Navigation = () => {
               <NavLink
                 to="/#menuInfo"
                 activeClassName="selected"
-                className="nav-link">
+                className="nav-link"
+              >
                 Menu
               </NavLink>
             </li>
@@ -49,7 +52,8 @@ const Navigation = () => {
               <NavLink
                 to="/#charInfo"
                 activeClassName="selected"
-                className="nav-link">
+                className="nav-link"
+              >
                 Characters
               </NavLink>
             </li>
@@ -57,15 +61,17 @@ const Navigation = () => {
               <NavLink
                 to="/#availability"
                 activeClassName="selected"
-                class="nav-link">
+                class="nav-link"
+              >
                 Availability
               </NavLink>
             </li>
             <li class="nav-item">
               <NavLink
-                to="/booking"
+                to="/bookings"
                 activeClassName="selected"
-                class="nav-link">
+                class="nav-link"
+              >
                 Book Now!
               </NavLink>
             </li>
