@@ -36,8 +36,8 @@ function Calendar(props) {
               {daysOfWeek.map((day, dayIdx) => {
                 let dayOfMonth = dayIdx + 1 + weekIdx * 7 - firstDayOfMonth;
                 let arry = booking.filter((event) => {
-                  console.log(event);
-                  console.log(event.date.slice(8) === dayOfMonth);
+                  // console.log(event);
+                  // console.log(event.date.slice(8) === dayOfMonth);
                   return Number(event.date.slice(8)) === dayOfMonth;
                 });
                 return (
