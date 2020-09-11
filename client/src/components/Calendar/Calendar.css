@@ -25,13 +25,22 @@ th {
 }
 
 #calendarHomepage {
+    height: 500px;
+    width: 745px;
     background-color: rgb(128, 0, 0) !important;
-    margin-right: 0px !important;
+
+    
 }
 
 #calendarTeaserCol {
     margin-left: 0px !important;
     background-color: rgb(128, 0, 0) !important;
+    background: url("./calendarabout.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px 470px;
+    border: none;
+
 
 }
 /* element.style {
