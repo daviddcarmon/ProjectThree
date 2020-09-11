@@ -32,6 +32,7 @@ function CharacterList() {
   }, []);
   return (
     <div id="charListBody">
+
       <Container id="charListArea">
         <CardDeck>
           <Row>
@@ -52,6 +53,7 @@ function CharacterList() {
                 </Card>
               </Col>
             ))}
+
 
             <Button id="bookNowBtn">Book Now!</Button>
           </Row>

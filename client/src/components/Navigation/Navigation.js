@@ -73,7 +73,7 @@ const Navigation = () => {
               <NavLink
                 to="/bookings"
                 activeClassName="selected"
-                class="nav-link"
+                class="nav-link" id="bookBtn"
               >
                 Book Now!
               </NavLink>

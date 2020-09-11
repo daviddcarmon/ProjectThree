@@ -8,6 +8,9 @@ import {
   CardText,
   CardDeck,
   CardBody,
+  Container,
+  Row,
+  Col,
 } from "reactstrap";
 import "../components/Menu/Menu.css";
 
@@ -27,10 +30,13 @@ function MenuList() {
     });
   }, []);
   return (
-    <div>
-      <CardDeck>
+
+<div id="menuListBody">
+     <Container id="menuListArea">
+       <Row>
+        <CardDeck>
         {menuArray.map((data) => (
-          <Card>
+          <Card id="menuListCardBody">
             <CardImg
               top
               width="100%"
@@ -44,9 +50,11 @@ function MenuList() {
             </CardBody>
           </Card>
         ))}
-      </CardDeck>
-      <Button>Book Now!</Button>
-    </div>
+       </CardDeck>
+    </Row>
+     <Button>Book Now!</Button>
+     </Container>
+     </div>
   );
 }
 

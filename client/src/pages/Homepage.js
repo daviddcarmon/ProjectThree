@@ -43,7 +43,6 @@ function Homepage() {
         <Calendar events={[]} />
         </Col>
         <Col md="8" id="calendarTeaserCol">
-          <MenuTeaser />
         </Col>
       </Row>
     </div>
