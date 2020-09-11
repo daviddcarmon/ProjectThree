@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
+import moment from "moment"
+ 
 
 import {
   Row,
@@ -53,7 +55,7 @@ const Confirmation = (props) => {
         <div id="confirmContent">
           <Row>
             <Col md="5">
-              <h1>{booking.date}</h1>
+              <h1>{moment(booking.date,"YYYY-MM-DD").format("ll")}</h1>
               <div class="vl"></div>
             </Col>
             <Col md="7">
