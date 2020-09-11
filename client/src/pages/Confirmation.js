@@ -53,11 +53,14 @@ const Confirmation = (props) => {
         <div id="confirmContent">
           <Row>
             <Col md="5">
-              <h1>CALENDER SHOWING YOUR DATE BOOKED</h1>
+              <h1>{booking.day}</h1>
               <div class="vl"></div>
             </Col>
             <Col md="7">
-              <h1>USER CONTENT</h1>
+              <h1>{booking.menu}</h1>
+              <h1>{booking.characters}</h1>
+
+              <h1>{booking.note}</h1>
             </Col>
           </Row>
           <Row>
