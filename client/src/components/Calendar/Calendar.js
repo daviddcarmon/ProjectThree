@@ -51,7 +51,7 @@ function Calendar(props) {
                     {!eventsToday[0] ? null : (
                       <ul>
                         {eventsToday.map((event) => (
-                          <li key={uuidv4()}>{event.name}</li>
+                          <li id="calendarColor" key={uuidv4()}></li>
                         ))}
                       </ul>
                     )}

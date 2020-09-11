@@ -24,6 +24,11 @@ th {
     padding: 1rem;
 }
 
+#calendarColor {
+    background-color: green;
+}
+
+
 #calendarHomepage {
     height: 500px;
     width: 745px;
