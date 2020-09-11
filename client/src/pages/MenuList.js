@@ -40,7 +40,7 @@ function MenuList() {
             <CardImg
               top
               width="100%"
-              src="/assets/256x186.svg"
+              src={`${process.env.PUBLIC_URL}/MenuItems/${data.img}.png`}
               alt="Card image cap"
             />
             <CardBody>
