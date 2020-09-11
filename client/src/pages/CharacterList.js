@@ -33,6 +33,7 @@ function CharacterList() {
   return (
     <div id="charListBody">
     <Container id="charListArea">
+    <Row>
     <CardDeck>
       {charArray.map((data) => (
         <Col xs="12" md="4">
@@ -50,10 +51,10 @@ function CharacterList() {
         </Card>
         </Col>
       ))}
-
-      <Button id="bookNowBtn">Book Now!</Button>
-        </Row>
-    </CardDeck>
+      
+        <Button id="bookNowBtn">Book Now!</Button>
+        </CardDeck>
+      </Row>
     </Container>
     </div>
 

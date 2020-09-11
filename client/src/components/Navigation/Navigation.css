@@ -18,7 +18,7 @@ body{
 
 
 nav.navbar.navbar-expand-md.fixed-top {
-    background: transparent;
+    background: rgba(0, 128, 0, 0.158);
     
 }
 
@@ -34,13 +34,30 @@ a {
     font-family: "nav";
 }
 
+a#bookBtn {
+    color: rgb(228, 176, 98);
+}
+a#bookBtn.nav-link:hover {
+    color: rgb(223, 82, 6);
+}
+
+
+
+
+
+
+
+a.nav-link.selected:hover {
+    color: rgb(223, 82, 6);
+}
+
 a#navhead.navbar-brand {
     font-size: 22px;
 }
 
 a.navbar-brand {
     margin-left: 12px;
-    color: rgb(0, 112, 0) !important;
+    color: rgb(27, 175, 27) !important;
 }
 
 a.nav-link.selected:hover {
