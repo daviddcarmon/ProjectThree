@@ -7,6 +7,7 @@ const PartySchema = new Schema({
     type: String,
     trim: true,
     required: true,
+    unique: true,
   },
   guest: {
     type: String,

@@ -33,7 +33,9 @@ function Booking() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (!form.date || !form.menu) {
+   
+
+    if (!form.date || !form.menu || !form.characters) {
       alert(`All fields are required.`);
       return;
     }
