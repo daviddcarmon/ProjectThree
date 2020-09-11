@@ -1,5 +1,6 @@
 let mongoose = require("mongoose");
 let db = require("../models");
+const { urlencoded } = require("express");
 
 mongoose.connect("mongodb://localhost/projectthree", {
   useNewUrlParser: true,
@@ -85,14 +86,17 @@ db.Characters.deleteMany({})
 
 let MenuSeed = [
   {
+    img: "silvermenuimg",
     partyPackageName: "Silver",
     menuDescription: "description",
   },
   {
+    img: "steelmenuimg",
     partyPackageName: "Steel",
     menuDescription: "silver menu items",
   },
   {
+    img: "dragonmenuimg",
     partyPackageName: "Dragon Glass",
     menuDescription: "silver menu items",
   },
