@@ -38,7 +38,7 @@ function Booking() {
       return;
     }
     API.saveBooking({
-      day: form.date,
+      date: form.date,
       guest: form.guest,
       characters: form.characters,
       menu: form.menu,

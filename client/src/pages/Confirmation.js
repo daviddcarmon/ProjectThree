@@ -34,13 +34,13 @@ const Confirmation = (props) => {
       });
   }, []);
 
-  // const handleDelete = () => {
-  //   API.delete(id)
-  //     .then(() => window.location.replace("/"))
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // };
+  const handleDelete = (x) => {
+    API.deleteBooking(id)
+      .then(() => window.location.replace("/"))
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <div className="container" id="confirmContainer">
@@ -53,7 +53,7 @@ const Confirmation = (props) => {
         <div id="confirmContent">
           <Row>
             <Col md="5">
-              <h1>{booking.day}</h1>
+              <h1>{booking.date}</h1>
               <div class="vl"></div>
             </Col>
             <Col md="7">
@@ -62,6 +62,10 @@ const Confirmation = (props) => {
 
               <h1>{booking.note}</h1>
             </Col>
+            <Row>
+              <p>Confirmation Number: {id}</p>
+              <Button onClick={()=> handleDelete(id)}>Delete Booking</Button>
+            </Row>
           </Row>
           <Row>
             <Button href="/" id="confirmBtn">
