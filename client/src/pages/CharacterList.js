@@ -32,32 +32,34 @@ function CharacterList() {
   }, []);
   return (
     <div id="charListBody">
-    <Container id="charListArea">
-    <Row>
-    <CardDeck>
-      {charArray.map((data) => (
-        <Col xs="12" md="4">
-        <Card id="charListCardBody">
-          <CardImg
-            top
-            width="100%"
-            src="https://vignette.wikia.nocookie.net/lotr/images/d/da/Legolas_portrait_-_EmpireMag.jpg/revision/latest/scale-to-width-down/340?cb=20130627111817"
-            alt="Card image cap"
-          id="charListImg"/>
-          <CardBody>
-            <CardTitle>{data.name}</CardTitle>
-            <CardText>{data.characterDescription}</CardText>
-          </CardBody>
-        </Card>
-        </Col>
-      ))}
-      
-        <Button id="bookNowBtn">Book Now!</Button>
-        </CardDeck>
-      </Row>
-    </Container>
-    </div>
 
+      <Container id="charListArea">
+        <CardDeck>
+          <Row>
+            {charArray.map((data) => (
+              <Col xs="12" md="4">
+                <Card id="charListCardBody">
+                  <CardImg
+                    top
+                    width="100%"
+                    src={data.image}
+                    alt="Card image cap"
+                    id="charListImg"
+                  />
+                  <CardBody>
+                    <CardTitle>{data.name}</CardTitle>
+                    <CardText>{data.characterDescription}</CardText>
+                  </CardBody>
+                </Card>
+              </Col>
+            ))}
+
+
+            <Button id="bookNowBtn">Book Now!</Button>
+          </Row>
+        </CardDeck>
+      </Container>
+    </div>
   );
 }
 

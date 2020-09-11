@@ -1,8 +1,9 @@
-import React from "react";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import API from "../utils/API"
+import API from "../utils/API";
+import moment from "moment"
+ 
 
 import {
   Row,
@@ -36,39 +37,47 @@ const Confirmation = (props) => {
       });
   }, []);
 
-  // const handleDelete = () => {
-  //   API.delete(id)
-  //     .then(() => window.location.replace("/"))
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // };
+  const handleDelete = (x) => {
+    API.deleteBooking(id)
+      .then(() => window.location.replace("/"))
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
-  <div className="container" id="confirmContainer">
-  <div id="confirmForm">
-    <Row>
-      <Col md="12">
-        <h1>PARTY BOOKED!</h1>
-      </Col>
-    </Row>
-    <div id="confirmContent">
-    <Row>
-    <Col md="5">
-      <h1>CALENDER SHOWING YOUR DATE BOOKED</h1>
-      <div class="vl"></div>
-    </Col>
-    <Col md="7">
-      <h1>USER CONTENT</h1>
-    </Col>
-    </Row>
-    <Row>
-    <Button href="/" id="confirmBtn">Back to home screen</Button>
+    <div className="container" id="confirmContainer">
+      <div id="confirmForm">
+        <Row>
+          <Col md="12">
+            <h1>PARTY BOOKED!</h1>
+          </Col>
+        </Row>
+        <div id="confirmContent">
+          <Row>
+            <Col md="5">
+              <h1>{moment(booking.date,"YYYY-MM-DD").format("ll")}</h1>
+              <div class="vl"></div>
+            </Col>
+            <Col md="7">
+              <h1>{booking.menu}</h1>
+              <h1>{booking.characters}</h1>
 
-    </Row>
+              <h1>{booking.note}</h1>
+            </Col>
+            <Row>
+              <p>Confirmation Number: {id}</p>
+              <Button onClick={()=> handleDelete(id)}>Delete Booking</Button>
+            </Row>
+          </Row>
+          <Row>
+            <Button href="/" id="confirmBtn">
+              Back to home screen
+            </Button>
+          </Row>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
   );
 };
 

@@ -13,6 +13,11 @@ const CharacterSchema = new Schema({
     trim: true,
     required: true,
   },
+  image: {
+    type: String,
+    trim: true,
+    required: true,
+  },
 });
 
 const Character = mongoose.model("Character", CharacterSchema);

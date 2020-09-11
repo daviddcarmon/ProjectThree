@@ -30,78 +30,32 @@ function MenuList() {
     });
   }, []);
   return (
-    <div id="menuListBody">
-      <Container id="menuListArea">
-        <Row>
-    <CardDeck>
-      {menuArray.map((data) => (
-        <Card id="menuListCardBody">
-          <CardImg
-            top
-            width="100%"
-            src="/assets/256x186.svg"
-            alt="Card image cap" 
-            id="menuListImg"
-          />
-          <CardBody>
-            <CardTitle>{data.partyPackageName}</CardTitle>
 
-            <CardText>{data.menuDescription}</CardText>
-          </CardBody>
-        </Card>
-        
-      ))}
-    
-      <Card id="menuListCardBody">
-        <CardImg
-          top
-          width="33%"
-          src="https://lh3.googleusercontent.com/proxy/yYjSEEQu8iDXPLCLPgqs40sABQR1smix7LF6hfTpxeqpbjTK0fkhYfiriNTSVeyQhbHfBjlKlV4GP3adfSw-PBPpyS7FjCfcJjlqo7pOn2GiatgzirGFotjKDqXOgu8C9idquFiZwXLyknqusr-gwS7A"
-          alt="Card image cap"
-          
-        />
-        <CardBody>
-          <CardTitle>Party Package #1</CardTitle>
+<div id="menuListBody">
+     <Container id="menuListArea">
+       <Row>
+        <CardDeck>
+        {menuArray.map((data) => (
+          <Card id="menuListCardBody">
+            <CardImg
+              top
+              width="100%"
+              src="/assets/256x186.svg"
+              alt="Card image cap"
+            />
+            <CardBody>
+              <CardTitle>{data.partyPackageName}</CardTitle>
 
-          <CardText>Full contents of package</CardText>
-        </CardBody>
-      </Card>
-
-      <Card id="menuListCardBody">
-        <CardImg
-          top
-          width="33%"
-          src="https://lh3.googleusercontent.com/proxy/yYjSEEQu8iDXPLCLPgqs40sABQR1smix7LF6hfTpxeqpbjTK0fkhYfiriNTSVeyQhbHfBjlKlV4GP3adfSw-PBPpyS7FjCfcJjlqo7pOn2GiatgzirGFotjKDqXOgu8C9idquFiZwXLyknqusr-gwS7A"
-          alt="Card image cap"
-        />
-        <CardBody>
-          <CardTitle>Party Package #2</CardTitle>
-
-          <CardText>Full contents of package</CardText>
-        </CardBody>
-      </Card>
-
-      <Card id="menuListCardBody">
-        <CardImg
-          top
-          width="33%"
-          src="https://lh3.googleusercontent.com/proxy/yYjSEEQu8iDXPLCLPgqs40sABQR1smix7LF6hfTpxeqpbjTK0fkhYfiriNTSVeyQhbHfBjlKlV4GP3adfSw-PBPpyS7FjCfcJjlqo7pOn2GiatgzirGFotjKDqXOgu8C9idquFiZwXLyknqusr-gwS7A"
-          alt="Card image cap"
-        />
-        <CardBody>
-          <CardTitle>Party Package #3</CardTitle>
-
-          <CardText>Full contents of package</CardText>
-        </CardBody>
-      </Card>
-
-     
-    </CardDeck>
+              <CardText>{data.menuDescription}</CardText>
+            </CardBody>
+          </Card>
+        ))}
+       </CardDeck>
     </Row>
      <Button>Book Now!</Button>
      </Container>
      </div>
-    );
-  };
+  );
+}
 
 export default MenuList;

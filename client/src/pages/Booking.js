@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../components/Form/Form.css";
 import Calendar from "../components/Calendar/Calendar";
 import { Button, Row, Col, Form, FormGroup, Label, Input } from "reactstrap";
@@ -21,8 +21,6 @@ import API from "../utils/API";
 //   this.setState(newState);
 // };
 
-// const [state, setState] = useState({});
-
 function Booking() {
   const [form, setForm] = useState({});
   const [booking, setBooking] = useState({});
@@ -34,44 +32,64 @@ function Booking() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(form);
 
     if (!form.date || !form.menu) {
       alert(`All fields are required.`);
       return;
     }
-    console.log({ form });
-
-    // API.saveBooking({
-    //   day: form.date,
-    //   guest: form.guest,
-    //   characters: form.character,
-    //   menu: form.menu,
-    //   note: form.note,
-    // })
-    //   .then((res) => {
-    //     console.log(res.data._id);
-    //     loadBookings(res.data._id)
-    //     window.location.href = "/bookings/" + res.data._id;
-
-    //     console.log(res);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
-  }
-
-  function loadBookings() {
-    API.getBooking()
+    API.saveBooking({
+      date: form.date,
+      guest: form.guest,
+      characters: form.characters,
+      menu: form.menu,
+      note: form.note,
+    })
       .then((res) => {
-        setBooking(res.data);
-        // console.log({ booking });
-        console.log(res.data);
+        console.log(res.data._id);
+        loadBookings(res.data._id);
+        window.location.replace(`/bookings/${ res.data._id }`);
+
+        console.log(res);
       })
       .catch((err) => {
         console.log(err);
       });
   }
+
+  function loadBookings() {
+    API.getBookings()
+      .then((res) => {
+        setBooking(res.data);
+        // console.log({ booking });
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  const [state, setState] = useState({
+    menuArray: [],
+  });
+
+  const { menuArray } = state;
+
+  const [charstate, charsetState] = useState({
+    charArray: [],
+  });
+
+  const { charArray } = charstate;
+
+  useEffect(() => {
+    API.getMenus().then(function (data) {
+      console.log(data);
+      setState({ ...state, menuArray: data.data });
+    });
+    API.getCharacters().then(function (data) {
+      console.log(data.data);
+      charsetState({ ...charstate, charArray: data.data });
+    });
+  }, []);
 
   return (
     <div class="container box" id="bookingForm">
@@ -99,9 +117,9 @@ function Booking() {
                 id="menuSelect"
                 onChange={handleForm}
               >
-                <option>Menu 1</option>
-                <option>Menu 2</option>
-                <option>Menu 3</option>
+                {menuArray.map((data) => (
+                  <option>{data.partyPackageName}</option>
+                ))}
               </Input>
               <Label for="characterSelect">Character Option</Label>
               <Input
@@ -110,11 +128,9 @@ function Booking() {
                 id="characterSelect"
                 onChange={handleForm}
               >
-                <option>Character 1</option>
-                <option>Character 2</option>
-                <option>Character 3</option>
-                <option>Character 3</option>
-                <option>Character 3</option>
+                {charArray.map((data) => (
+                  <option>{data.name}</option>
+                ))}
               </Input>
             </FormGroup>
             <FormGroup>
