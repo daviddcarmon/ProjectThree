@@ -47,8 +47,9 @@ function Calendar(props) {
                       : dayOfMonth}
                     {!arry[0] ? null : (
                       <ul>
-                        {arry.map((event) => (
-                          <li key={uuidv4()}>{event.note}</li>
+                        {eventsToday.map((event) => (
+                          <li id="calendarColor" key={uuidv4()}></li>
+
                         ))}
                       </ul>
                     )}
