@@ -25,37 +25,50 @@ let CharacterSeed = [
     name: "Gimli",
     characterDescription:
       "This bearded, ax-wielding warrior dwarf is a brave and loyal member of the fellowship of the ring. Invite him to your next LOTR watch party for some sure entertainment!",
-    image: "./gimli.png",
+    image:
+      "https://i.cbc.ca/1.4291804.1505491472!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/gimli-lord-of-the-rings.jpg",
   },
   {
     name: "Aragorn",
     characterDescription:
       "The heir to the throne of Gondor, proven himself to be a noble leader with a pure heart. Welcome this worthy leader into you next LOTR watch party!",
+    image:
+      "https://www.denofgeek.com/wp-content/uploads/2018/05/viggo-mortensen-aragorn-lord-of-the-rings-the-two-towers.jpg?fit=620%2C368",
   },
   {
     name: "Legolas",
     characterDescription:
       "Very skillful with a bow and arrow, this boyish elf has a consistently higher kill number than that of Gimli. Just like his dwarf friend, he is a brave and loyal member of the fellowship of the ring.",
+    image:
+      "https://vignette.wikia.nocookie.net/lotr/images/3/33/Legolas_-_in_Two_Towers.PNG/revision/latest?cb=20120916035151",
   },
   {
     name: "Gandalf",
     characterDescription:
       "The grandfatherly wizard that is the first to understand the dangerous powers that Bilbo's ring holds. With remarkable wisdom and insight into hobbites and men alike, he sees potential and ability where others do not. Invite this wise wizard to your next LOTR watch party!",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXxS_UX6tvEpUSZFCkaGElNyQsgYgJKRIReg&usqp=CAU",
   },
   {
     name: "Samwise Gamgee",
     characterDescription:
       "Frodo's best friend and constant companion, extremely loyal in helping Frodo complete his mission with the ring.His life represents the mortal life lived to the fullest as immortality holds no charm for him and we only wants to thrive in the present. Invite this loyal comrade to your next LOTR watch party!",
+    image:
+      "https://litreactor.com/sites/default/files/images/column/headers/samwise_gamgee.jpg",
   },
   {
     name: "Pippin Took",
     characterDescription:
       "Another michievous hobbit, playful and enjoys a good party. What more do you need to know to invite this party-goer to your next LOTR watch party?",
+    image:
+      "https://vignette.wikia.nocookie.net/ouatff/images/c/c0/806PippinTook.png/revision/latest?cb=20180111040251",
   },
   {
     name: "Merry Brandybuck",
     characterDescription:
       "Best friend to Pippin, Merry is a mischievous and courageous hobbit, a rabble-rouser and troublemaker really. However, he proves himself to be a fearless fihter at the grat battle of Minas Tirith, when he helps slay the witch-king. Invite him to yokur next LOTR watch party for some extra fun!",
+    image:
+      "https://pm1.narvii.com/6262/7b4de121ba0e169a61af74d6c03fc4b234b4fe77_00.jpg",
   },
 ];
 
