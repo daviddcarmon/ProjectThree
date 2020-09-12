@@ -43,16 +43,16 @@ function MenuList() {
               src={`${process.env.PUBLIC_URL}/MenuItems/${data.img}.png`}
               alt="Card image cap"
             />
-            <CardBody>
-              <CardTitle>{data.partyPackageName}</CardTitle>
+            <CardBody id="menuCardBodyIn">
+              <CardTitle id="menuCard">{data.partyPackageName}</CardTitle>
 
-              <CardText>{data.menuDescription}</CardText>
+              <CardText id="menuText">{data.menuDescription}</CardText>
             </CardBody>
           </Card>
         ))}
        </CardDeck>
     </Row>
-     <Button>Book Now!</Button>
+     <Button id="menuListBtn">Book Now!</Button>
      </Container>
      </div>
   );

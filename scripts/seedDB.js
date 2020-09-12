@@ -18,7 +18,7 @@ let CharacterSeed = [
   {
     name: "Bilbo Baggins",
     characterDescription:
-      "Frodo's uncle, who possesses the ring at the beginning, a playful old hobbit, but very protective and restless about the ring. Invite this cheerful old hobbit to your next LOTR watch party!  ",
+      "Frodo's uncle, who possesses the ring at the beginning, a playful old hobbit, but very protective and restless about the ring. Invite this cheerful old hobbit to your next LOTR watch party!",
     image:
       "https://cdn.costumewall.com/wp-content/uploads/2018/10/bilbo-baggins.jpg",
   },
@@ -88,17 +88,17 @@ let MenuSeed = [
   {
     img: "silvermenuimg",
     partyPackageName: "Silver",
-    menuDescription: "description",
+    menuDescription: "Perfect for an intimate viewing of Lord of the Rings. After all, two is company! The menu we suggest would include Banana and Dark Chocolate Crepes, Eggs Benedict on Sourdough bread, and a Buttersquash soup.",
   },
   {
     img: "steelmenuimg",
     partyPackageName: "Steel",
-    menuDescription: "silver menu items",
+    menuDescription: "Throwing a jubilant soirée? This package is meant for you. Menu items include finger foods such as Mini Bacon and Cheese Quiche, Scones and Clotted Cream, and a Deliciously Decadent Charcuterie board.",
   },
   {
     img: "dragonmenuimg",
     partyPackageName: "Dragon Glass",
-    menuDescription: "silver menu items",
+    menuDescription: "For the dedicated Weekend-Marathon fan. You've cleared your schedule, invited your friends (there's always that one friend who has never seen it before), and you're ready to live in the world of Middle Earth for 48 hours. This menu includes Lemon Tart pie, Raspberry Butter Jam with Toast and a Crispy Roasted Garlic Chicken to finish.",
   },
 ];
 
