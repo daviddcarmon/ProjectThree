@@ -5,21 +5,6 @@ import { Button, Row, Col, Form, FormGroup, Label, Input } from "reactstrap";
 // import {bookingReducer} from "../reducers/Bookings"
 import API from "../utils/API";
 
-// DISPATCH
-// export const handleSubmit = (e) => {
-//   e.preventDefault();
-//   const action = {
-//     type: "NEW_BOOKING",
-//     payload: {
-//       day: this.day.current.value,
-//       guest: this.guest.current.value,
-//       menu: this.menu.current.value,
-//       bookingDate: Date.now(),
-//     },
-//   };
-//   const newState = bookingReducer(this.state, action);
-//   this.setState(newState);
-// };
 
 function Booking() {
   const [form, setForm] = useState({});
@@ -98,7 +83,7 @@ function Booking() {
       <Row>
         <Col>
           <Form>
-            <h1>Book With Us</h1>
+            <h1 id="formHead">Book With Us</h1>
             <p class="text-center w-responsive mx-auto mb-5">
               Please answer the questions below to book!
             </p>
@@ -136,7 +121,7 @@ function Booking() {
               </Input>
             </FormGroup>
             <FormGroup>
-              <Label for="guestSelect">Number of Guest</Label>
+              <Label for="guestSelect">Number of Guests</Label>
               <Input
                 type="select"
                 name="guest"
@@ -164,7 +149,7 @@ function Booking() {
                 onChange={handleForm}
               />
             </FormGroup>
-            <Button onClick={handleSubmit}>Book Party!</Button>
+            <Button onClick={handleSubmit}id="bookListBtn">Book Party!</Button>
           </Form>
         </Col>
         <Col>

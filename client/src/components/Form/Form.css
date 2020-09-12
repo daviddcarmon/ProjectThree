@@ -3,27 +3,60 @@
     src:url("./EagleLake-Regular.ttf");
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 
 #bookingForm{
-    background-color: transparent;
-    padding:.3rem 3rem;
+  background-color: #185a36;
+  padding:.3rem 3rem;
     padding-bottom:4rem;
     /* margin: 3rem; */
     padding-right: 15px;
+    box-shadow: 2px 3px 9px #7fe7ae;
+
 }
 
 
-h1 {
+h1#formHead {
     margin: 1.5rem  0 !important;
     text-align: center;
     font-size: 45px;
     font-family: "nav" !important;
-    color: rgb(247, 255, 130);
+    color: rgb(27, 175, 27);
+}
+
+.form-control {
+  box-shadow: 2px 3px 9px #7fe7ae;
+  height: 60px;
+
 }
 
 .text-center {
     color: white;
+    font-family: 'Cinzel', serif;
+}
+
+label {
+  color: rgb(27, 175, 27);
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+
+}
+
+input {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+select {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+textarea#notes.form-control {
+  height: 60px;
 }
 
 .box {
@@ -50,4 +83,13 @@ h1 {
     background-color: rgb(0, 112, 0);
   }
   
-  
+  #bookListBtn {
+    background-color: #185a36;
+    margin: 10px;
+    width: 100%;
+    border: 6px inset #033118;
+    font-family: "nav";
+    font-size: 20px;
+    
+
+}

@@ -50,24 +50,28 @@ const Confirmation = (props) => {
       <div id="confirmForm">
         <Row>
           <Col md="12">
-            <h1>PARTY BOOKED!</h1>
+            <h1 id="confirmHead">PARTY BOOKED!</h1>
           </Col>
         </Row>
         <div id="confirmContent">
           <Row>
             <Col md="5">
-              <h1>{moment(booking.date,"YYYY-MM-DD").format("ll")}</h1>
+              <h1 id="bookDate">{moment(booking.date,"YYYY-MM-DD").format("ll")}</h1>
               <div class="vl"></div>
             </Col>
             <Col md="7">
-              <h1>{booking.menu}</h1>
-              <h1>{booking.characters}</h1>
-
-              <h1>{booking.note}</h1>
+              <h1 id="bookMenu">{booking.menu}</h1>
+              <h1 id="bookChar">{booking.characters}</h1>
+              <hr></hr>
+              <h1 id="bookNote">{booking.note}</h1>
             </Col>
             <Row>
-              <p>Confirmation Number: {id}</p>
-              <Button onClick={()=> handleDelete(id)}>Delete Booking</Button>
+              <Col id="confirmRow">
+              <p id="bookText">Confirmation Number: {id}</p>
+              </Col>
+              <Col id="deleteRow">
+              <Button onClick={()=> handleDelete(id)} id="deleteBtn">Delete Booking</Button>
+              </Col>
             </Row>
           </Row>
           <Row>
