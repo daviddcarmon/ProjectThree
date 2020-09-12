@@ -1,14 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+@font-face{
+    font-family: "nav";
+    src:url("./EagleLake-Regular.ttf");
+  }
+
 #menuListContainer{
     margin:1rem !important;
 }
 
+#menuListBody {
+    background-color: #185a36;
+}
+
 #menuListImg{
-    box-shadow: 2px 3px 9px #888888;
+    box-shadow: 2px 3px 9px #7fe7ae;
 }
 
 #menuListCardBody{
-    box-shadow: 0px 0px 8px #888888;
-    /* margin: 1rem 0rem !important; */
+    box-shadow: 0px 0px 8px #59db02;
+    
+
+}
+
+div#menuCard.card-title {
+    font-family: "nav";
+    font-size: 40px;
+    color: rgb(27, 175, 27) !important;
+
+}
 
 
+#menuListBtn {
+    background-color: #185a36;
+    margin: 10px;
+    width: 100%;
+    border: 6px inset #033118;
+    font-family: "nav";
+    font-size: 20px;
+    
+
+}
+
+#menuListBtn:hover {
+    background-color: #079145;
+
+}
+
+#menuCardBodyIn {
+    background-color: #185a36;
+}
+
+#menuText {
+    font-family: 'Cinzel', serif;
+    color: white;
+    font-size: 17px;
 }

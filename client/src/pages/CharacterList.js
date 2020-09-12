@@ -46,16 +46,16 @@ function CharacterList() {
                     alt="Card image cap"
                     id="charListImg"
                   />
-                  <CardBody>
-                    <CardTitle>{data.name}</CardTitle>
-                    <CardText>{data.characterDescription}</CardText>
+                  <CardBody id="charCardBodyIn">
+                    <CardTitle id="charCard">{data.name}</CardTitle>
+                    <CardText id="charText">{data.characterDescription}</CardText>
                   </CardBody>
                 </Card>
               </Col>
             ))}
 
 
-            <Button id="bookNowBtn">Book Now!</Button>
+            <Button id="charListBtn">Book Now!</Button>
           </Row>
         </CardDeck>
       </Container>
