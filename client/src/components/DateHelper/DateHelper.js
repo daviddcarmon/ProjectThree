@@ -3,7 +3,7 @@ const currentYear = currentDate.getFullYear();
 const currentMonth = currentDate.getMonth();
 
 const getDaysInMonth = (month, year) => {
-  return new Date(year, month, 0).getDate();
+  return new Date(year, month + 1, 0).getDate();
 };
 
 const getFirstDayOfMonth = (month, year) => {
