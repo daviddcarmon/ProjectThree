@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === "production") {
 // // connect to database
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/projectthree",
-  { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
+  { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false }
 );
 
 //middleware, using cookies to handle authentication
@@ -64,9 +64,9 @@ app.use(router);
 // define PORT
 const PORT = process.env.PORT || 5001;
 
-// app.get("*", function (req, res) {
-//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-// });
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 // start the server
 app.listen(PORT, function () {
