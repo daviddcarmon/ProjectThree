@@ -8,6 +8,7 @@ function Calendar(props) {
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const numberOfWeeks = [0, 1, 2, 3, 4, 5];
   const [booking, setBooking] = useState([]);
+  let arry;
 
   useEffect(() => {
     API.getBookings()
@@ -35,7 +36,7 @@ function Calendar(props) {
             <tr key={uuidv4()}>
               {daysOfWeek.map((day, dayIdx) => {
                 let dayOfMonth = dayIdx + 1 + weekIdx * 7 - firstDayOfMonth;
-                let arry = booking.filter((event) => {
+                arry = booking.filter((event) => {
                   // console.log(event);
                   // console.log(event.date.slice(8) === dayOfMonth);
                   return Number(event.date.slice(8)) === dayOfMonth;
@@ -49,7 +50,6 @@ function Calendar(props) {
                       <ul>
                         {arry.map((event) => (
                           <li id="calendarColor" key={uuidv4()}></li>
-
                         ))}
                       </ul>
                     )}
